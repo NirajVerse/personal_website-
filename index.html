@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Niraj Gupta | AI/ML Researcher</title>
+    <meta
+      name="description"
+      content="Niraj Gupta - computer science student and AI/ML researcher focused on computer vision, semantic segmentation, and efficient deployment."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-glow" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <canvas class="matrix-canvas" id="matrixCanvas" aria-hidden="true"></canvas>
+    <div class="ai-field" aria-hidden="true"></div>
+    <div class="ai-scan" aria-hidden="true"></div>
+    <canvas class="ai-canvas" id="neuralCanvas" aria-hidden="true"></canvas>
+
+    <nav class="input-nav" aria-label="Input layer navigation">
+      <a class="input-brand" href="#top">Niraj Gupta</a>
+      <a class="input-link" data-input="about" href="#about">About</a>
+      <a class="input-link" data-input="highlights" href="#highlights">Highlights</a>
+      <a class="input-link" data-input="experience" href="#experience">Experience</a>
+      <a class="input-link" data-input="projects" href="#projects">Projects</a>
+      <a class="input-link" data-input="skills" href="#skills">Skills</a>
+      <a class="input-link" data-input="contact" href="#contact">Contact</a>
+    </nav>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy" data-reveal style="--delay: 0s;">
+            <p class="eyebrow">AI/ML Researcher · Starkville, MS</p>
+            <h1>
+              I love <span class="hero-em hero-nowrap">AI research</span> and building
+              <span class="hero-em">infra</span> that turns vision models into
+              real-world systems.
+            </h1>
+            <p class="lead">
+              B.S. Computer Science student at Mississippi State University.
+              Focused on computer vision, semantic segmentation, and efficient
+              deployment.
+            </p>
+            <div class="hero-actions">
+              <a class="btn primary" href="#projects">View projects</a>
+              <a
+                class="btn ghost"
+                href="Niraj_Gupta_Resume_Final__Copy_.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download resume
+              </a>
+            </div>
+            <div class="hero-links">
+              <a href="mailto:ng739@msstate.edu">ng739@msstate.edu</a>
+              <span aria-hidden="true">/</span>
+              <a href="https://github.com/NirajVerse" target="_blank" rel="noreferrer">
+                github.com/NirajVerse
+              </a>
+              <span aria-hidden="true">/</span>
+              <a href="https://linkedin.com/in/ng9812" target="_blank" rel="noreferrer">
+                linkedin.com/in/ng9812
+              </a>
+            </div>
+          </div>
+          <div class="hero-stack">
+            <div class="stat-card" data-reveal style="--delay: 0.1s;">
+              <p class="card-eyebrow">Now</p>
+              <h3>Mississippi State University</h3>
+              <p class="card-sub">B.S. Computer Science, Data Science minor</p>
+              <p class="card-sub">Aug 2024 - May 2028</p>
+              <div class="stat-row">
+                <div>
+                  <p class="stat-label">GPA</p>
+                  <p class="stat-value">4.0 / 4.0</p>
+                </div>
+                <div>
+                  <p class="stat-label">Focus</p>
+                  <p class="stat-value">CV, ML, Systems</p>
+                </div>
+              </div>
+            </div>
+            <div class="stat-card accent" data-reveal style="--delay: 0.2s;">
+              <p class="card-eyebrow">Highlights</p>
+              <ul class="stat-list">
+                <li>99%+ accuracy in wood chip classification</li>
+                <li>U-Net segmentation with elastic augmentation</li>
+                <li>YOLO Nano for CubeSat fire monitoring</li>
+              </ul>
+            </div>
+            <div class="stat-card" data-reveal style="--delay: 0.3s;">
+              <p class="card-eyebrow">Focus areas</p>
+              <div class="tag-row">
+                <span>Computer Vision</span>
+                <span>Semantic Segmentation</span>
+                <span>Efficient Inference</span>
+                <span>Reinforcement Learning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-heading" data-reveal style="--delay: 0s;">
+            <p class="eyebrow">About</p>
+            <h2>Research-driven, deployment-minded.</h2>
+          </div>
+          <div class="about-grid">
+            <div class="about-text" data-reveal style="--delay: 0.1s;">
+              <p>
+                I build end-to-end AI systems that move from experiments to
+                dependable tools. My recent work spans industrial computer
+                vision for forest products and reinforcement learning for
+                wireless communication.
+              </p>
+              <p>
+                I care about model efficiency, reliable data pipelines, and
+                evaluation that holds up outside the lab.
+              </p>
+            </div>
+            <div class="about-cards">
+              <div class="mini-card" data-reveal style="--delay: 0.2s;">
+                <h3>Coursework</h3>
+                <p>
+                  Data Structures and Algorithms, Software Development, Database
+                  Management Systems, Computer Networks, Linear Algebra,
+                  Machine Learning, AI, Data Wrangling, Probability, Systems
+                  Programming.
+                </p>
+              </div>
+              <div class="mini-card" data-reveal style="--delay: 0.3s;">
+                <h3>What I care about</h3>
+                <p>
+                  Reliable training pipelines, efficient inference, and real
+                  deployments where accuracy, latency, and robustness meet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="highlights" class="section">
+        <div class="container">
+          <div class="section-heading" data-reveal style="--delay: 0s;">
+            <p class="eyebrow">Highlights</p>
+            <h2>Measurable wins and systems wins.</h2>
+          </div>
+          <div class="highlight-grid">
+            <article class="highlight-card" data-reveal style="--delay: 0.1s;">
+              <h3>Industrial CV</h3>
+              <p>
+                Transfer learning classifiers (ResNet50, Xception) reached 99%+
+                accuracy on wood chip identification.
+              </p>
+            </article>
+            <article class="highlight-card" data-reveal style="--delay: 0.2s;">
+              <h3>Segmentation Pipeline</h3>
+              <p>
+                U-Net with ResNet34 backbone, elastic transforms, and Dice loss
+                for robust tree ring detection.
+              </p>
+            </article>
+            <article class="highlight-card" data-reveal style="--delay: 0.3s;">
+              <h3>RL + NLP</h3>
+              <p>
+                DistilBERT embeddings inside a hybrid actor-critic model improved
+                wireless optimization performance.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-heading" data-reveal style="--delay: 0s;">
+            <p class="eyebrow">Experience</p>
+            <h2>Applied research and engineering.</h2>
+          </div>
+          <div class="list-stack">
+            <article class="list-card" data-reveal style="--delay: 0.1s;">
+              <div class="list-head">
+                <div>
+                  <p class="role">Researcher Intern - AI2F</p>
+                  <p class="org">
+                    MSU Department of Industrial and Systems Engineering
+                  </p>
+                </div>
+                <span class="date">Jun 2025 - Aug 2025</span>
+              </div>
+              <ul>
+                <li>
+                  Designed and deployed transfer learning classifiers (ResNet50,
+                  Xception) to identify Southern Yellow Pine and Red Oak wood
+                  chips with 99%+ accuracy.
+                </li>
+                <li>
+                  Built a semantic segmentation pipeline in PyTorch using U-Net
+                  with a ResNet34 backbone, elastic transformations, and Dice
+                  loss optimization.
+                </li>
+                <li>
+                  Engineered test-time augmentation and weighted sliding-window
+                  inference, applying Zhang-Suen thinning to refine output masks.
+                </li>
+              </ul>
+            </article>
+
+            <article class="list-card" data-reveal style="--delay: 0.2s;">
+              <div class="list-head">
+                <div>
+                  <p class="role">Undergraduate Research Assistant</p>
+                  <p class="org">MSU Wireless Communication Research</p>
+                </div>
+                <span class="date">Oct 2025 - Dec 2025</span>
+              </div>
+              <ul>
+                <li>
+                  Adapted deep reinforcement learning algorithms to optimize
+                  network parameters and stabilize convergence in stochastic
+                  environments.
+                </li>
+                <li>
+                  Fine-tuned a DistilBERT large language model within a hybrid
+                  actor-critic network using semantic embeddings.
+                </li>
+                <li>
+                  Developed a GPU-optimized PyTorch training pipeline with
+                  custom experience replay buffers for large-scale matrix
+                  operations.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-heading" data-reveal style="--delay: 0s;">
+            <p class="eyebrow">Projects</p>
+            <h2>Systems built for constraints.</h2>
+          </div>
+          <div class="project-list">
+            <article class="project-item" data-reveal style="--delay: 0.1s;">
+              <div class="project-main">
+                <h3>CubeSat Forest Fire Detection</h3>
+                <p>
+                  Lightweight YOLO Nano (2.3M parameters) for resource-constrained
+                  CubeSat fire monitoring using PyTorch and AMD ROCm.
+                </p>
+                <div class="project-tags">
+                  <span>PyTorch</span>
+                  <span>YOLO Nano</span>
+                  <span>ROCm</span>
+                  <span>Edge AI</span>
+                </div>
+              </div>
+              <span class="project-date">Jan 2026 - Present</span>
+            </article>
+
+            <article class="project-item" data-reveal style="--delay: 0.2s;">
+              <div class="project-main">
+                <h3>Neural Network From Scratch</h3>
+                <p>
+                  A custom deep learning library in Python with a tensor engine
+                  and foundational linear algebra operations.
+                </p>
+                <div class="project-tags">
+                  <span>Python</span>
+                  <span>NumPy</span>
+                  <span>Tensor Engine</span>
+                </div>
+              </div>
+              <span class="project-date">Dec 2025 - Present</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-heading" data-reveal style="--delay: 0s;">
+            <p class="eyebrow">Skills</p>
+            <h2>Tools I build with.</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skills-block" data-reveal style="--delay: 0.1s;">
+              <h3>Languages</h3>
+              <div class="tag-row">
+                <span>Python</span>
+                <span>C/C++</span>
+                <span>SQL</span>
+                <span>MPI</span>
+              </div>
+            </div>
+            <div class="skills-block" data-reveal style="--delay: 0.2s;">
+              <h3>Libraries</h3>
+              <div class="tag-row">
+                <span>PyTorch</span>
+                <span>TensorFlow</span>
+                <span>Keras</span>
+                <span>TensorRT</span>
+                <span>NumPy</span>
+                <span>Pandas</span>
+                <span>Scikit-Learn</span>
+                <span>Matplotlib</span>
+              </div>
+            </div>
+            <div class="skills-block" data-reveal style="--delay: 0.3s;">
+              <h3>Tools</h3>
+              <div class="tag-row">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Linux</span>
+                <span>MLOps</span>
+                <span>Firebase DB</span>
+                <span>Selenium</span>
+                <span>BeautifulSoup</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <div class="contact-card" data-reveal style="--delay: 0s;">
+            <div>
+              <p class="eyebrow">Contact</p>
+              <h2>Let us build something that ships.</h2>
+              <p>
+                Interested in collaboration, research, or internships? I am open
+                to working on projects that push AI toward real-world impact.
+              </p>
+            </div>
+            <div class="contact-actions">
+              <a class="btn primary" href="mailto:ng739@msstate.edu">Email me</a>
+              <a
+                class="btn ghost"
+                href="https://linkedin.com/in/ng9812"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Connect on LinkedIn
+              </a>
+            </div>
+          </div>
+          <div class="link-grid" data-reveal style="--delay: 0.1s;">
+            <a class="link-card" href="Niraj_Gupta_Resume_Final__Copy_.pdf" target="_blank" rel="noreferrer">
+              Resume
+            </a>
+            <a class="link-card" href="https://github.com/NirajVerse" target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            <a class="link-card" href="https://linkedin.com/in/ng9812" target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
+            <a class="link-card" href="mailto:ng739@msstate.edu">Email</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Copyright <span id="year"></span> Niraj Gupta. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
