@@ -509,6 +509,14 @@ a {
   margin-top: 0;
 }
 
+.project-main h3 a {
+  color: inherit;
+}
+
+.project-main h3 a:hover {
+  color: var(--accent);
+}
+
 .project-main p {
   margin-bottom: 12px;
 }
