@@ -1,21 +1,4 @@
-# Access to this site does not grant permission for search indexing,
-# content collection, AI input, or AI/ML training.
-# Content signals:
-# search: no
-# ai-input: no
-# ai-train: no
-
 User-agent: *
-Disallow: /
-
-# Common AI crawlers
-User-agent: GPTBot
-Disallow: /
-
-User-agent: Google-Extended
-Disallow: /
-
-User-agent: CCBot
-Disallow: /
+Allow: /
 
 Sitemap: https://guptaniraj.com.np/sitemap.xml
