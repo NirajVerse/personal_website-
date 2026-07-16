@@ -527,6 +527,22 @@ a {
   font-weight: 500;
 }
 
+.project-links {
+  margin-top: 14px;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
 .project-date {
   color: var(--muted);
   font-size: 0.95rem;
