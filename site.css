@@ -12,6 +12,7 @@
 
 html {
   color-scheme: light;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -43,8 +44,75 @@ a:focus-visible {
   outline-offset: 3px;
 }
 
+.skip-link {
+  position: fixed;
+  z-index: 20;
+  top: 12px;
+  left: 12px;
+  padding: 8px 11px;
+  color: var(--page);
+  background: var(--ink);
+  transform: translateY(-170%);
+  transition: transform 160ms ease;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.site-layout {
+  display: grid;
+  min-height: 100svh;
+  grid-template-columns: 168px minmax(0, 1fr);
+}
+
+.side-nav {
+  position: sticky;
+  top: 0;
+  align-self: start;
+  block-size: 100svh;
+  padding: 40px 16px;
+  border-inline-end: 1px solid #e7e5e2;
+}
+
+.side-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.side-nav li + li {
+  margin-top: 4px;
+}
+
+.side-nav a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-block-size: 44px;
+  color: var(--ink);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.side-nav a:hover {
+  color: var(--accent);
+}
+
+.side-nav svg {
+  inline-size: 18px;
+  block-size: 18px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.6;
+}
+
 .wrap {
-  width: min(calc(100% - 40px), var(--max-width));
+  width: min(calc(100% - 72px), var(--max-width));
   margin: 0 auto;
   padding: clamp(62px, 10vw, 96px) 0 72px;
 }
@@ -59,6 +127,7 @@ ul {
 
 .hero {
   margin-bottom: 50px;
+  scroll-margin-top: 24px;
 }
 
 .eyebrow {
@@ -123,6 +192,7 @@ h1 span {
 
 .section {
   margin-top: 68px;
+  scroll-margin-top: 24px;
 }
 
 h2 {
@@ -194,6 +264,52 @@ h3 span {
   margin-top: 80px;
   color: var(--muted);
   font-size: 0.83rem;
+}
+
+@media (max-width: 720px) {
+  .site-layout {
+    display: block;
+  }
+
+  .side-nav {
+    position: sticky;
+    z-index: 10;
+    inline-size: 100%;
+    block-size: auto;
+    padding: 0 16px;
+    border-right: 0;
+    border-bottom: 1px solid #e7e5e2;
+    background: rgba(251, 250, 248, 0.94);
+    backdrop-filter: blur(10px);
+  }
+
+  .side-nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-inline-size: 480px;
+    margin-inline: auto;
+  }
+
+  .side-nav li + li {
+    margin-top: 0;
+  }
+
+  .side-nav a {
+    justify-content: center;
+    gap: 7px;
+    min-block-size: 52px;
+    font-size: 0.84rem;
+  }
+
+  .side-nav svg {
+    inline-size: 16px;
+    block-size: 16px;
+  }
+
+  .hero,
+  .section {
+    scroll-margin-top: 72px;
+  }
 }
 
 @media (max-width: 560px) {
