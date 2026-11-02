@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Experience — Niraj Gupta</title>
+    <meta name="description" content="Research experience in machine learning, wireless systems, and computer vision by Niraj Gupta." />
+    <link rel="canonical" href="https://guptaniraj.com.np/experience.html" />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap site-nav">
+        <a class="site-name" href="index.html">niraj gupta</a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a aria-current="page" href="experience.html">experience</a>
+          <a href="projects.html">projects</a>
+          <a href="about.html">about</a>
+          <a href="Niraj_Gupta_Resume_V2.pdf" target="_blank" rel="noreferrer">résumé</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="wrap">
+      <header class="page-heading">
+        <h1>Experience</h1>
+        <p>Research work across high-dimensional biological data, wireless systems, and computer vision.</p>
+      </header>
+
+      <section aria-label="Research experience">
+        <article class="entry">
+          <p class="entry-meta">Aug 2026 — Present</p>
+          <h2>National Oceanic and Atmospheric Administration</h2>
+          <p class="entry-org">Research Assistant</p>
+          <ul>
+            <li>Built sparse-matrix CatBoost regressors from 229,357 16S rRNA ASV features and metadata for 1,226 water samples to model seven surface-water measurements.</li>
+            <li>Designed cruise-grouped held-out testing and five-fold cross-validation, with fold-specific prevalence filters and out-of-fold model selection to avoid leakage.</li>
+            <li>Achieved a held-out temperature R² of 0.748 and 1.773°C MAE; produced TreeSHAP analyses, station-level error maps, and reproducible A100/Slurm experiments.</li>
+          </ul>
+          <p class="tool-line">CatBoost, sparse matrices, TreeSHAP, Python, Slurm, NVIDIA A100</p>
+        </article>
+
+        <article class="entry">
+          <p class="entry-meta">Oct 2025 — Jul 2026</p>
+          <h2>MSU Wireless · Mississippi State University</h2>
+          <p class="entry-org">Undergraduate Research Assistant</p>
+          <ul>
+            <li>Implemented and evaluated barrage and random physical-layer jamming on an over-the-air 5G NR testbed using a USRP DSR jammer and Soft-T UE.</li>
+            <li>Built a two-stage PyTorch pipeline with an LSTM autoencoder and BiLSTM-attention classifier for three-class jamming classification.</li>
+          </ul>
+          <p class="tool-line">PyTorch, LSTM, BiLSTM, 5G NR, USRP</p>
+        </article>
+
+        <article class="entry">
+          <p class="entry-meta">May 2025 — Oct 2025</p>
+          <h2>AI2F · Mississippi State University</h2>
+          <p class="entry-org">Research Intern, Department of Industrial and Systems Engineering</p>
+          <ul>
+            <li>Trained ResNet50 and Xception transfer-learning models to classify Southern Yellow Pine and Red Oak wood chips, achieving 90% accuracy.</li>
+            <li>Developed a PyTorch U-Net and ResNet34 semantic-segmentation pipeline for tree-ring detection with elastic transformations and Dice loss.</li>
+            <li>Increased Raspberry Pi vision inference from 1 FPS to 30 FPS through Hailo NPU deployment, hardware-level normalization, and INT8 quantization.</li>
+          </ul>
+          <p class="tool-line">PyTorch, ResNet, U-Net, Hailo NPU, INT8 quantization</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>© <span id="year"></span> Niraj Gupta</span>
+        <a href="mailto:ng739@msstate.edu">ng739@msstate.edu</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

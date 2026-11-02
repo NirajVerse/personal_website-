@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects — Niraj Gupta</title>
+    <meta name="description" content="Selected machine-learning and software projects by Niraj Gupta." />
+    <link rel="canonical" href="https://guptaniraj.com.np/projects.html" />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap site-nav">
+        <a class="site-name" href="index.html">niraj gupta</a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="experience.html">experience</a>
+          <a aria-current="page" href="projects.html">projects</a>
+          <a href="about.html">about</a>
+          <a href="Niraj_Gupta_Resume_V2.pdf" target="_blank" rel="noreferrer">résumé</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="wrap">
+      <header class="page-heading">
+        <h1>Projects</h1>
+        <p>A few things I have built while studying machine learning and systems.</p>
+      </header>
+
+      <section aria-label="Selected projects">
+        <article class="entry">
+          <h2>EcoCAR · Road-object detection</h2>
+          <p>Built a YAML-configurable, CLI-driven PyTorch and Ultralytics YOLO pipeline to audit, train, benchmark, select, and run detectors on 860 road images with 3,418 labeled objects across 14 classes.</p>
+          <ul>
+            <li>Fine-tuned YOLO26n, YOLO26s, and YOLO26m under controlled settings and selected YOLO26s using mAP50–95, recall, latency, and model-size tie-breakers.</li>
+            <li>Evaluated the frozen winner on 86 untouched test images: 40.75% mAP50–95, 72.40% precision, 80.30% recall, and 76.15% F1.</li>
+            <li>Added 42 Pytest tests, dataset fingerprinting, and SHA-256 integrity checks.</li>
+          </ul>
+          <p class="tool-line">PyTorch, Ultralytics YOLO, YAML, Pytest</p>
+        </article>
+
+        <article class="entry">
+          <h2>LatentLink · Optical transfer</h2>
+          <p>Built a VQ-VAE image-transfer pipeline that compresses 512 × 512 RGB images from 768 KB to about 4 KB while retaining 27.4 dB PSNR.</p>
+          <ul>
+            <li>Transmits compressed images through about 27 QR frames.</li>
+            <li>Built a PyTorch and FastAPI inference service with QR-based transfer, CRC32 validation, sequence tracking, and retransmission for missing frames.</li>
+          </ul>
+          <p class="tool-line">VQ-VAE, PyTorch, FastAPI, QR codes, CRC32</p>
+        </article>
+
+        <article class="entry">
+          <h2>JobConnect · AI job matching</h2>
+          <p>Led AI/ML development for a two-person team building an explainable job-matching assistant for the Mississippi Department of Employment Security.</p>
+          <ul>
+            <li>Built resume-to-job matching around embedding search, requirement scoring, preference filters, confidence, and audit logging.</li>
+            <li>Designed evaluation workflows using de-identified resumes and human-reviewed resume-to-job matches.</li>
+          </ul>
+          <p class="tool-line">Embedding search, hybrid ranking, explainable AI</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>© <span id="year"></span> Niraj Gupta</span>
+        <a href="mailto:ng739@msstate.edu">ng739@msstate.edu</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
