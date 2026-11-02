@@ -30,41 +30,88 @@
     <link rel="stylesheet" href="site.css" />
   </head>
   <body>
-    <a class="skip-link" href="#content">Skip to content</a>
     <header class="site-header">
-      <div class="wrap site-nav">
-        <a class="site-name" aria-current="page" href="index.html">niraj gupta</a>
-        <nav class="nav-links" aria-label="Primary navigation">
-          <a href="experience.html">experience</a>
-          <a href="projects.html">projects</a>
-          <a href="about.html">about</a>
+      <div class="wrap header-line">
+        <span class="site-name">niraj gupta</span>
+        <nav class="external-links" aria-label="External links">
+          <a href="mailto:ng739@msstate.edu">email</a>
+          <a href="https://github.com/NirajVerse" target="_blank" rel="noreferrer">github</a>
+          <a href="https://www.linkedin.com/in/ng9812" target="_blank" rel="noreferrer">linkedin</a>
           <a href="Niraj_Gupta_Resume_V2.pdf" target="_blank" rel="noreferrer">résumé</a>
         </nav>
       </div>
     </header>
 
-    <main id="content" class="wrap home">
-      <h1>Hi, I’m Niraj.</h1>
-      <p class="lede">I am a computer science student and researcher at Mississippi State University. I work on machine-learning systems for biological data, computer vision, and real-world constraints.</p>
-      <p class="intro">I am currently a Research Assistant with the National Oceanic and Atmospheric Administration, where I build models for ocean measurements from microbial sequencing data.</p>
-      <p class="contact-line"><a href="mailto:ng739@msstate.edu">email</a><span>·</span><a href="https://github.com/NirajVerse" target="_blank" rel="noreferrer">github</a><span>·</span><a href="https://www.linkedin.com/in/ng9812" target="_blank" rel="noreferrer">linkedin</a><span>·</span><a href="Niraj_Gupta_Resume_V2.pdf" target="_blank" rel="noreferrer">résumé</a></p>
+    <main class="wrap">
+      <section class="intro" aria-labelledby="intro-heading">
+        <h1 id="intro-heading">Hi, I’m Niraj.</h1>
+        <p>I am a computer science student and researcher at Mississippi State University. I work on machine-learning systems for biological data, computer vision, and real-world constraints.</p>
+        <p>I am currently a Research Assistant with the National Oceanic and Atmospheric Administration, where I build models for ocean measurements from microbial sequencing data.</p>
+      </section>
 
-      <section class="section" aria-labelledby="explore-heading">
-        <p class="section-label" id="explore-heading">Explore</p>
-        <ul class="link-list">
-          <li><a href="experience.html">Experience</a><span>Research at NOAA, MSU Wireless, and AI2F.</span></li>
-          <li><a href="projects.html">Projects</a><span>Road-object detection, optical transfer, and explainable job matching.</span></li>
-          <li><a href="about.html">About</a><span>Education, coursework, and tools.</span></li>
-        </ul>
+      <section class="section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Experience</h2>
+
+        <article class="entry">
+          <p class="entry-meta">Aug 2026 — Present</p>
+          <h3>Research Assistant, National Oceanic and Atmospheric Administration</h3>
+          <p>Built sparse-matrix CatBoost regressors from 229,357 16S rRNA ASV features and metadata for 1,226 water samples to model seven surface-water measurements. I designed cruise-grouped held-out testing and five-fold cross-validation with fold-specific prevalence filters to avoid leakage, then produced TreeSHAP analyses and reproducible A100/Slurm experiments. The temperature model reached a held-out R² of 0.748 with 1.773°C MAE.</p>
+          <p class="tools">CatBoost, sparse matrices, TreeSHAP, Python, Slurm, NVIDIA A100</p>
+        </article>
+
+        <article class="entry">
+          <p class="entry-meta">Oct 2025 — Jul 2026</p>
+          <h3>Undergraduate Research Assistant, MSU Wireless</h3>
+          <p>Implemented and evaluated barrage and random physical-layer jamming on an over-the-air 5G NR testbed using a USRP DSR jammer and Soft-T UE. Built a two-stage PyTorch pipeline with an LSTM autoencoder and BiLSTM-attention classifier for three-class jamming classification.</p>
+          <p class="tools">PyTorch, LSTM, BiLSTM, 5G NR, USRP</p>
+        </article>
+
+        <article class="entry">
+          <p class="entry-meta">May 2025 — Oct 2025</p>
+          <h3>Research Intern, AI2F · Mississippi State University</h3>
+          <p>Trained ResNet50 and Xception transfer-learning models to classify Southern Yellow Pine and Red Oak wood chips, achieving 90% accuracy. Developed a PyTorch U-Net and ResNet34 semantic-segmentation pipeline for tree-ring detection, and increased Raspberry Pi inference from 1 FPS to 30 FPS through Hailo NPU deployment and INT8 quantization.</p>
+          <p class="tools">PyTorch, ResNet, U-Net, Hailo NPU, INT8 quantization</p>
+        </article>
+      </section>
+
+      <section class="section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+
+        <article class="entry">
+          <h3>EcoCAR · Road-object detection</h3>
+          <p>Built a YAML-configurable, CLI-driven PyTorch and Ultralytics YOLO pipeline to audit, train, benchmark, select, and run detectors on 860 road images with 3,418 labeled objects across 14 classes. The selected model reached 40.75% mAP50–95 and 76.15% F1 on 86 untouched test images; I also added 42 Pytest checks, dataset fingerprinting, and SHA-256 integrity checks.</p>
+          <p class="tools">PyTorch, Ultralytics YOLO, YAML, Pytest</p>
+        </article>
+
+        <article class="entry">
+          <h3>LatentLink · Optical transfer</h3>
+          <p>Built a VQ-VAE image-transfer pipeline that compresses 512 × 512 RGB images from 768 KB to about 4 KB while retaining 27.4 dB PSNR. The system moves an image through about 27 QR frames and includes a PyTorch and FastAPI inference service with CRC32 validation, sequence tracking, and retransmission for missing frames.</p>
+          <p class="tools">VQ-VAE, PyTorch, FastAPI, QR codes, CRC32</p>
+        </article>
+
+        <article class="entry">
+          <h3>JobConnect · AI job matching</h3>
+          <p>Led AI/ML development for a two-person team building an explainable job-matching assistant for the Mississippi Department of Employment Security. The system combines embedding search, requirement scoring, preference filters, confidence, audit logging, and human-reviewed evaluation.</p>
+          <p class="tools">Embedding search, hybrid ranking, explainable AI</p>
+        </article>
+      </section>
+
+      <section class="section" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <p><strong>Mississippi State University</strong> — Bachelor of Science in Computer Science, Minor in Data Science. Expected May 2028 · GPA 4.0/4.0.</p>
+        <p><strong>Relevant coursework:</strong> Data Structures and Algorithms, Database Management Systems, Computer Networks, Systems Programming, Operating Systems I, Data Science, Machine Learning, Artificial Intelligence, and AI in Robotics.</p>
+      </section>
+
+      <section class="section" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <p><strong>Languages:</strong> Python, C/C++, SQL, JavaScript.</p>
+        <p><strong>ML &amp; data:</strong> PyTorch, TensorFlow, Keras, scikit-learn, NumPy, pandas, CatBoost, Ultralytics YOLO, CUDA, TensorRT.</p>
+        <p><strong>Systems:</strong> Linux, Git, GitHub, Docker, Pytest, FastAPI, Flask, React, PostgreSQL, REST APIs, AWS EC2, Slurm, MPI, ROS 2.</p>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="wrap footer-inner">
-        <span>© <span id="year"></span> Niraj Gupta</span>
-        <a href="mailto:ng739@msstate.edu">ng739@msstate.edu</a>
-      </div>
+      <div class="wrap">© 2026 Niraj Gupta</div>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
