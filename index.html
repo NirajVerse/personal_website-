@@ -57,17 +57,29 @@
         <ul class="work-list">
           <li>
             <h3>National Oceanic and Atmospheric Administration <span>· Research Assistant · Aug 2026 — Present</span></h3>
-            <p>Built sparse-matrix CatBoost regressors from 229,357 16S rRNA ASV features and metadata for 1,226 water samples to model seven surface-water measurements. I designed cruise-grouped held-out testing and five-fold cross-validation with fold-specific prevalence filters to avoid leakage, then produced TreeSHAP analyses and reproducible A100/Slurm experiments. The temperature model reached a held-out R² of 0.748 with 1.773°C MAE.</p>
+            <ul class="detail-list">
+              <li>Built sparse-matrix CatBoost regressors from 229,357 16S rRNA ASV features and metadata for 1,226 water samples, modeling seven surface-water targets.</li>
+              <li>Designed leakage-resistant cruise-grouped 80/20 holdout testing and five-fold cross-validation with fold-specific prevalence filters.</li>
+              <li>Achieved held-out temperature R² of 0.748 with 1.773°C MAE and 50.2% lower RMSE than the mean baseline; produced TreeSHAP analyses and reproducible A100/Slurm runs.</li>
+            </ul>
             <p class="tools">CatBoost, sparse matrices, TreeSHAP, Python, Slurm, NVIDIA A100</p>
           </li>
           <li>
             <h3>MSU Wireless <span>· Undergraduate Research Assistant · Oct 2025 — Jul 2026</span></h3>
-            <p>Implemented and evaluated barrage and random physical-layer jamming on an over-the-air 5G NR testbed using a USRP DSR jammer and Soft-T UE. Built a two-stage PyTorch pipeline with an LSTM autoencoder and BiLSTM-attention classifier for three-class jamming classification.</p>
+            <ul class="detail-list">
+              <li>Implemented and evaluated barrage and random physical-layer jamming on an over-the-air 5G NR testbed using a USRP DSR jammer and Soft-T UE.</li>
+              <li>Analyzed gNB scheduler KPIs to distinguish clean and jammed traffic without IQ capture.</li>
+              <li>Built a two-stage PyTorch pipeline with an LSTM autoencoder for feature learning and a BiLSTM-attention classifier for three-class jamming classification.</li>
+            </ul>
             <p class="tools">PyTorch, LSTM, BiLSTM, 5G NR, USRP</p>
           </li>
           <li>
             <h3>AI2F, Mississippi State University <span>· Research Intern · May 2025 — Oct 2025</span></h3>
-            <p>Trained ResNet50 and Xception transfer-learning models to classify Southern Yellow Pine and Red Oak wood chips, achieving 90% accuracy. Developed a PyTorch U-Net and ResNet34 semantic-segmentation pipeline for tree-ring detection, and increased Raspberry Pi inference from 1 FPS to 30 FPS through Hailo NPU deployment and INT8 quantization.</p>
+            <ul class="detail-list">
+              <li>Trained ResNet50 and Xception transfer-learning models to classify Southern Yellow Pine and Red Oak wood chips, achieving 90% accuracy.</li>
+              <li>Built a PyTorch U-Net and ResNet34 semantic-segmentation pipeline for tree-ring detection, using elastic augmentations and Dice loss.</li>
+              <li>Increased Raspberry Pi inference from 1 FPS to 30 FPS through Hailo NPU deployment, hardware-level normalization, and INT8 quantization.</li>
+            </ul>
             <p class="tools">PyTorch, ResNet, U-Net, Hailo NPU, INT8 quantization</p>
           </li>
         </ul>

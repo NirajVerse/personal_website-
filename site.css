@@ -109,8 +109,8 @@ h1 span {
   color: #36373c;
 }
 
-.quick-list li,
-.work-list li {
+.quick-list > li,
+.work-list > li {
   padding-left: 2px;
 }
 
@@ -140,7 +140,7 @@ h2 {
   margin-bottom: 0;
 }
 
-.work-list li + li {
+.work-list > li + li {
   margin-top: 24px;
 }
 
@@ -159,6 +159,23 @@ h3 span {
 
 .work-list p {
   margin-bottom: 0;
+}
+
+.detail-list {
+  margin: 7px 0 0;
+  padding-left: 19px;
+}
+
+.detail-list li {
+  padding-left: 2px;
+}
+
+.detail-list li + li {
+  margin-top: 5px;
+}
+
+.detail-list li::marker {
+  color: var(--muted);
 }
 
 .tools {
