@@ -220,10 +220,3 @@ h3 span {
     margin-top: 54px;
   }
 }
-
-@media (min-width: 840px) {
-  .wrap {
-    margin-left: 25vw;
-    margin-right: 0;
-  }
-}
