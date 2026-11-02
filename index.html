@@ -90,17 +90,29 @@
         <ul class="work-list">
           <li>
             <h3>EcoCAR <span>· Road-object detection</span></h3>
-            <p>Built a YAML-configurable, CLI-driven PyTorch and Ultralytics YOLO pipeline to audit, train, benchmark, select, and run detectors on 860 road images with 3,418 labeled objects across 14 classes. The selected model reached 40.75% mAP50–95 and 76.15% F1 on 86 untouched test images; I also added 42 Pytest checks, dataset fingerprinting, and SHA-256 integrity checks.</p>
+            <ul class="detail-list">
+              <li>Built a YAML-configurable, CLI-driven PyTorch and Ultralytics YOLO pipeline for 860 road images, 3,418 labeled objects, and 14 classes.</li>
+              <li>Fine-tuned YOLO26 variants under controlled settings and selected the final model using accuracy, recall, latency, and model-size criteria.</li>
+              <li>Reached 40.75% mAP50–95 and 76.15% F1 on 86 untouched test images; added 42 Pytest checks, dataset fingerprinting, and SHA-256 integrity checks.</li>
+            </ul>
             <p class="tools">PyTorch, Ultralytics YOLO, YAML, Pytest</p>
           </li>
           <li>
             <h3>LatentLink <span>· Optical transfer</span></h3>
-            <p>Built a VQ-VAE image-transfer pipeline that compresses 512 × 512 RGB images from 768 KB to about 4 KB while retaining 27.4 dB PSNR. The system moves an image through about 27 QR frames and includes a PyTorch and FastAPI inference service with CRC32 validation, sequence tracking, and retransmission for missing frames.</p>
+            <ul class="detail-list">
+              <li>Built a VQ-VAE image-transfer pipeline that compresses 512 × 512 RGB images from 768 KB to about 4 KB while retaining 27.4 dB PSNR.</li>
+              <li>Moved images through about 27 QR frames with a PyTorch and FastAPI inference service.</li>
+              <li>Added CRC32 validation, sequence tracking, and retransmission for missing frames.</li>
+            </ul>
             <p class="tools">VQ-VAE, PyTorch, FastAPI, QR codes, CRC32</p>
           </li>
           <li>
             <h3>JobConnect <span>· AI job matching</span></h3>
-            <p>Led AI/ML development for a two-person team building an explainable job-matching assistant for the Mississippi Department of Employment Security. The system combines embedding search, requirement scoring, preference filters, confidence, audit logging, and human-reviewed evaluation.</p>
+            <ul class="detail-list">
+              <li>Led AI/ML development for a two-person team building an explainable job-matching assistant for the Mississippi Department of Employment Security.</li>
+              <li>Built resume-to-job matching around embedding search, requirement scoring, preference filters, confidence, and audit logging.</li>
+              <li>Designed evaluation workflows using de-identified resumes and human-reviewed resume-to-job matches.</li>
+            </ul>
             <p class="tools">Embedding search, hybrid ranking, explainable AI</p>
           </li>
         </ul>
