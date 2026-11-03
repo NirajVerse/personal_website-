@@ -155,13 +155,7 @@ h1 span {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-}
-
-.hero h1 span {
-  display: inline-block;
-  /* Give gradient glyphs room to paint at either edge without changing layout. */
-  padding-inline: 0.08em;
-  margin-inline: -0.08em;
+  letter-spacing: normal;
 }
 
 .hero-copy {
