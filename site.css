@@ -159,6 +159,7 @@ h1 span {
 
 .hero h1 span {
   display: inline-block;
+  padding-inline-start: 0.07em;
 }
 
 .hero-copy {
