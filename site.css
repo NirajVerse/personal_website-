@@ -281,6 +281,156 @@ h3 span {
   text-transform: uppercase;
 }
 
+.writing-header {
+  margin-bottom: 52px;
+}
+
+.writing-header h1 {
+  margin-bottom: 8px;
+}
+
+.writing-header p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.post-index {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.post-index a {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 20px;
+  align-items: baseline;
+  padding: 7px 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-index-title {
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+.post-index time {
+  color: var(--muted);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.post-index a:hover .post-index-title,
+.post-index a:hover time {
+  color: var(--accent);
+}
+
+.post-back {
+  margin-bottom: 28px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.post-back a {
+  text-decoration: none;
+}
+
+.post-header {
+  margin-bottom: 46px;
+}
+
+.post-kicker,
+.post-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.post-kicker {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.post-header h1 {
+  margin-bottom: 14px;
+  font-size: clamp(2.2rem, 5vw, 2.8rem);
+}
+
+.post-meta {
+  margin-bottom: 20px;
+}
+
+.post-dek {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+
+.post-body > p,
+.post-body > ul,
+.post-table-wrap {
+  margin-bottom: 21px;
+}
+
+.post-body h2 {
+  margin: 48px 0 13px;
+  color: var(--ink);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.25;
+  text-transform: none;
+}
+
+.post-body ul {
+  padding-left: 21px;
+}
+
+.post-body li + li {
+  margin-top: 7px;
+}
+
+.post-note {
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+
+.post-table-wrap {
+  overflow-x: auto;
+}
+
+.post-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.94rem;
+}
+
+.post-table th,
+.post-table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #e7e5e2;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.post-table thead th {
+  border-top: 1px solid #e7e5e2;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.post-table tbody th {
+  font-weight: 500;
+}
+
+.post-table .is-selected {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .project-index {
   padding: 0;
   margin: 0;
@@ -367,6 +517,12 @@ h3 span {
   .project-index a {
     grid-template-columns: 1fr;
     gap: 3px;
+  }
+
+  .post-index a {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    padding: 9px 0;
   }
 
   .project-repo {

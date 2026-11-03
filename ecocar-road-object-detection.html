@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <title>How I chose a road-object detector for EcoCAR · Niraj Gupta</title>
+    <meta name="description" content="How Niraj Gupta compared three YOLO models for EcoCAR and selected a road-object detector using validation data." />
+    <link rel="canonical" href="https://guptaniraj.com.np/ecocar-road-object-detection.html" />
+    <meta property="og:title" content="How I chose a road-object detector for EcoCAR" />
+    <meta property="og:description" content="A validation-first comparison of three YOLO models on an imbalanced road-scene dataset." />
+    <meta property="og:url" content="https://guptaniraj.com.np/ecocar-road-object-detection.html" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2026-09-02" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-layout">
+      <nav class="side-nav" aria-label="Primary navigation">
+        <ul>
+          <li>
+            <a href="index.html">
+              <span>Home</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="m3 10 9-7 9 7"></path>
+                <path d="M5.5 9.5v10h13v-10"></path>
+                <path d="M9.5 19.5v-6h5v6"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html">
+              <span>Projects</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M3.5 7.5h6l1.5 2h9.5v8.75A1.75 1.75 0 0 1 18.75 20h-15A1.75 1.75 0 0 1 2 18.25v-9A1.75 1.75 0 0 1 3.75 7.5Z"></path>
+                <path d="M2 11.5h20"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="posts.html" aria-current="page">
+              <span>Posts</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M6 3.5h9l3 3v14H6a2 2 0 0 1-2-2v-13a2 2 0 0 1 2-2Z"></path>
+                <path d="M15 3.5v3h3"></path>
+                <path d="M8 11h8"></path>
+                <path d="M8 15h8"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="wrap" id="main-content">
+        <article class="post">
+          <p class="post-back"><a href="posts.html">← Writing</a></p>
+          <header class="post-header">
+            <p class="post-kicker">EcoCAR · Computer vision</p>
+            <h1>How I chose a road-object detector for EcoCAR</h1>
+            <p class="post-meta"><time datetime="2026-09-02">Sep 2026</time> · 4 min read</p>
+            <p class="post-dek">I compared three YOLO models on a small, imbalanced road-scene dataset and selected the best accuracy-speed tradeoff without tuning on the test set.</p>
+          </header>
+
+          <div class="post-body">
+            <p>For EcoCAR, I was not trying to pick the largest detector. I needed a model that could recognize road objects accurately while still responding quickly enough for a moving-vehicle setting. I compared three YOLO models under the same rules and made the final choice from validation data. The test set stayed untouched until the decision was frozen.</p>
+
+            <h2>The data shaped the problem</h2>
+            <p>The dataset had 860 road images, 3,418 labeled objects, and 14 classes. It was small and heavily imbalanced: Cars made up 62.3% of all labels, while the four rarest classes had only 27 examples combined. That mattered because a single aggregate score could look good while hiding weak coverage of rare road objects.</p>
+
+            <h2>One pipeline, three candidates</h2>
+            <p>I built one configurable pipeline instead of three separate training scripts. It audited the data, trained YOLO26n, YOLO26s, and YOLO26m, evaluated each best checkpoint on the same validation split, measured latency, and recorded the selection before testing the winner.</p>
+            <ul>
+              <li>Every candidate used the same 640-pixel input, batch size, data split, and matching rules.</li>
+              <li>A YAML configuration and saved run records made each experiment reproducible.</li>
+              <li>Class-aware, one-to-one matching measured correct detections rather than raw prediction counts.</li>
+            </ul>
+
+            <h2>What won</h2>
+            <p>YOLO26s delivered the strongest validation result without a meaningful speed penalty.</p>
+            <div class="post-table-wrap" role="region" aria-label="Validation comparison" tabindex="0">
+              <table class="post-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Model</th>
+                    <th scope="col">Validation mAP50-95</th>
+                    <th scope="col">Local FPS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">YOLO26n</th>
+                    <td>35.89%</td>
+                    <td>43.56</td>
+                  </tr>
+                  <tr class="is-selected">
+                    <th scope="row">YOLO26s</th>
+                    <td>40.26%</td>
+                    <td>42.70</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">YOLO26m</th>
+                    <td>39.16%</td>
+                    <td>39.67</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>YOLO26s gained 4.37 percentage points of validation mAP50-95 over YOLO26n for only 0.46 ms more mean latency per image. It also outperformed YOLO26m by 1.10 points while running about 1.79 ms faster per image.</p>
+
+            <h2>Tested once, after selection</h2>
+            <p>After selecting YOLO26s, I evaluated it on 86 held-out test images. It reached 40.75% test mAP50-95, 72.40% precision, 80.30% recall, and a 76.15% F1 score. The test result was close to validation, but the small and imbalanced split is not enough to claim broad production generalization.</p>
+            <p class="post-note">The 42.70 FPS figure measures model inference at batch size 1 with 640-pixel inputs. It does not include video decoding, rendering, tracking, or camera overhead.</p>
+
+            <h2>What I learned</h2>
+            <p>The largest model did not win. The more important outcome was a defensible selection process: inspect the dataset first, compare candidates under the same conditions, choose on validation data, and use the test set only after the choice is final.</p>
+            <p>The model was strongest on common classes such as Cars, Traffic-lights, and Traffic-signs. Person and MiniBus were weaker, and some rare classes had too little data to support strong conclusions. This is a measured baseline, not a production-ready perception system.</p>
+
+            <h2>What I would do next</h2>
+            <p>I would collect more rare-class examples, inspect Person and MiniBus failures, repeat training across multiple seeds or folds, and benchmark the full video path on the intended hardware. The next comparison should use the same controlled setup so the result remains meaningful.</p>
+          </div>
+        </article>
+        <footer class="site-footer">© 2026 Niraj Gupta</footer>
+      </main>
+    </div>
+  </body>
+</html>
