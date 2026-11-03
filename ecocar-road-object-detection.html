@@ -110,11 +110,11 @@
                 </tbody>
               </table>
             </div>
-            <figure class="post-figure">
-              <img src="ecocar-accuracy-latency.png" width="1223" height="868" alt="Validation accuracy versus local latency for YOLO26n, YOLO26s, and YOLO26m. YOLO26s has the highest validation mAP50-95 while remaining close to the fastest model." />
-              <figcaption>Validation accuracy versus local latency. YOLO26s had the highest validation mAP50-95 while staying close to the fastest model.</figcaption>
-            </figure>
             <p>YOLO26s gained 4.37 percentage points of validation mAP50-95 over YOLO26n for only 0.46 ms more mean latency per image. It also outperformed YOLO26m by 1.10 points while running about 1.79 ms faster per image.</p>
+            <figure class="post-figure">
+              <img src="ecocar-training-convergence.png" width="2047" height="1208" alt="Line graph of validation mAP50-95 by training epoch for YOLO26n in blue, YOLO26s in orange, and YOLO26m in gray. YOLO26n improves steadily while the two larger models peak earlier and fluctuate more." />
+              <figcaption>Validation mAP50-95 by epoch. The curves show how each candidate learned; the controlled validation comparison above determined the final selection.</figcaption>
+            </figure>
 
             <h2>Tested once, after selection</h2>
             <p>After selecting YOLO26s, I evaluated it on 86 held-out test images. It reached 40.75% test mAP50-95, 72.40% precision, 80.30% recall, and a 76.15% F1 score. The test result was close to validation, but the small and imbalanced split is not enough to claim broad production generalization.</p>
