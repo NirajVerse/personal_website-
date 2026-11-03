@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Niraj Gupta code mark</title>
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#635bff"/>
+  <path d="M24 18 12 32l12 14M40 18l12 14-12 14M36 17 28 47" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4.5"/>
+  <circle cx="31.5" cy="39.5" r="2.8" fill="#fff"/>
+</svg>
