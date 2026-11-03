@@ -159,7 +159,9 @@ h1 span {
 
 .hero h1 span {
   display: inline-block;
-  padding-inline-start: 0.07em;
+  /* Give gradient glyphs room to paint at either edge without changing layout. */
+  padding-inline: 0.08em;
+  margin-inline: -0.08em;
 }
 
 .hero-copy {
