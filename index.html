@@ -93,22 +93,31 @@
         <h2 id="experience-heading">Experience</h2>
         <ul class="work-list">
           <li>
-            <h3>NOAA <span>· Research Assistant · Aug 2026 — Present</span></h3>
+            <h3>National Oceanic and Atmospheric Administration <span>· Research Assistant · Aug 2026 — Present</span></h3>
             <ul class="detail-list">
-              <li>Built cruise-grouped CatBoost models for 1,226 water samples, achieving 0.748 temperature R² and 50.2% lower RMSE.</li>
+              <li>Built CatBoost models from 229,357 ASVs for seven targets across 1,226 water samples.</li>
+              <li>Used cruise-grouped holdouts and five-fold validation to prevent data leakage.</li>
+              <li>Reached temperature R² 0.748, 1.773°C MAE, and 50.2% lower RMSE.</li>
             </ul>
+            <p class="tools">CatBoost, sparse matrices, TreeSHAP, Python, Slurm, NVIDIA A100</p>
           </li>
           <li>
             <h3>MSU Wireless <span>· Undergraduate Research Assistant · Oct 2025 — Jul 2026</span></h3>
             <ul class="detail-list">
-              <li>Evaluated over-the-air 5G NR jamming and built a PyTorch LSTM–BiLSTM classifier for three-class detection.</li>
+              <li>Tested barrage and random 5G jamming on an over-the-air USRP testbed.</li>
+              <li>Used gNB scheduler KPIs to distinguish clean and jammed traffic without IQ capture.</li>
+              <li>Built an LSTM–BiLSTM classifier for three-class jamming detection.</li>
             </ul>
+            <p class="tools">PyTorch, LSTM, BiLSTM, 5G NR, USRP</p>
           </li>
           <li>
-            <h3>AI2F (MSU) <span>· Research Intern · May 2025 — Oct 2025</span></h3>
+            <h3>AI2F, Mississippi State University <span>· Research Intern · May 2025 — Oct 2025</span></h3>
             <ul class="detail-list">
-              <li>Achieved 90% wood-chip classification accuracy and raised Raspberry Pi inference from 1 to 30 FPS with Hailo INT8.</li>
+              <li>Trained ResNet50 and Xception wood-chip classifiers to 90% accuracy.</li>
+              <li>Built a U-Net/ResNet34 pipeline for tree-ring segmentation.</li>
+              <li>Raised Raspberry Pi inference from 1 to 30 FPS with Hailo INT8.</li>
             </ul>
+            <p class="tools">PyTorch, ResNet, U-Net, Hailo NPU, INT8 quantization</p>
           </li>
         </ul>
       </section>
@@ -119,20 +128,29 @@
           <li>
             <h3>EcoCAR <span>· Road-object detection</span></h3>
             <ul class="detail-list">
-              <li>Built and validated a 14-class YOLO road-object detector, reaching 40.75% mAP50–95 and 76.15% F1 on untouched test images.</li>
+              <li>Built a configurable YOLO pipeline for 860 images, 3,418 objects, and 14 classes.</li>
+              <li>Benchmarked YOLO variants by accuracy, recall, latency, and model size.</li>
+              <li>Reached 40.75% mAP50–95 and 76.15% F1 on 86 untouched tests.</li>
             </ul>
+            <p class="tools">PyTorch, Ultralytics YOLO, YAML, Pytest</p>
           </li>
           <li>
             <h3>LatentLink <span>· Optical transfer</span></h3>
             <ul class="detail-list">
-              <li>Built a VQ-VAE/QR image-transfer system that reduced 512 × 512 RGB images from 768 KB to about 4 KB.</li>
+              <li>Compressed 512 × 512 RGB images from 768 KB to about 4 KB with VQ-VAE.</li>
+              <li>Sent each image through about 27 QR-code frames.</li>
+              <li>Added CRC32 validation, missing-frame retransmission, and FastAPI inference.</li>
             </ul>
+            <p class="tools">VQ-VAE, PyTorch, FastAPI, QR codes, CRC32</p>
           </li>
           <li>
             <h3>JobConnect <span>· AI job matching</span></h3>
             <ul class="detail-list">
-              <li>Led AI/ML for an explainable job-matching assistant for the Mississippi Department of Employment Security.</li>
+              <li>Led AI/ML for a two-person explainable job-matching assistant for MDES.</li>
+              <li>Combined embedding search, requirement scoring, and preference filters.</li>
+              <li>Added confidence estimates, audit logs, and human-reviewed evaluation.</li>
             </ul>
+            <p class="tools">Embedding search, hybrid ranking, explainable AI</p>
           </li>
         </ul>
       </section>

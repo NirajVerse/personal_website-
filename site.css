@@ -251,6 +251,12 @@ h3 span {
   color: var(--muted);
 }
 
+.tools {
+  margin-top: 8px !important;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .compact-section p {
   margin-bottom: 12px;
 }
