@@ -155,7 +155,11 @@ h1 span {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  letter-spacing: normal;
+  /* Preserve the headline's tight tracking while giving gradient glyphs paint room. */
+  padding-inline: calc(0.06em + 2px);
+  margin-inline: calc(-0.06em - 2px);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .hero-copy {
