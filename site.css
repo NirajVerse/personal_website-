@@ -158,7 +158,7 @@ h1 span {
 }
 
 .hero h1 span {
-  margin-inline-end: 0.05em;
+  display: inline-block;
 }
 
 .hero-copy {
