@@ -343,7 +343,7 @@ h3 span {
 
   .side-nav ul {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     max-inline-size: 480px;
     margin-inline: auto;
   }
