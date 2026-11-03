@@ -431,6 +431,24 @@ h3 span {
   font-weight: 600;
 }
 
+.post-figure {
+  margin: 28px 0 21px;
+}
+
+.post-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #e7e5e2;
+}
+
+.post-figure figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
 .project-index {
   padding: 0;
   margin: 0;
