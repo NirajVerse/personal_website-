@@ -93,31 +93,22 @@
         <h2 id="experience-heading">Experience</h2>
         <ul class="work-list">
           <li>
-            <h3>National Oceanic and Atmospheric Administration <span>· Research Assistant · Aug 2026 — Present</span></h3>
+            <h3>NOAA <span>· Research Assistant · Aug 2026 — Present</span></h3>
             <ul class="detail-list">
-              <li>Built sparse-matrix CatBoost regressors from 229,357 16S rRNA ASV features and metadata for 1,226 water samples, modeling seven surface-water targets.</li>
-              <li>Designed leakage-resistant cruise-grouped 80/20 holdout testing and five-fold cross-validation with fold-specific prevalence filters.</li>
-              <li>Achieved held-out temperature R² of 0.748 with 1.773°C MAE and 50.2% lower RMSE than the mean baseline; produced TreeSHAP analyses and reproducible A100/Slurm runs.</li>
+              <li>Built cruise-grouped CatBoost models for 1,226 water samples, achieving 0.748 temperature R² and 50.2% lower RMSE.</li>
             </ul>
-            <p class="tools">CatBoost, sparse matrices, TreeSHAP, Python, Slurm, NVIDIA A100</p>
           </li>
           <li>
             <h3>MSU Wireless <span>· Undergraduate Research Assistant · Oct 2025 — Jul 2026</span></h3>
             <ul class="detail-list">
-              <li>Implemented and evaluated barrage and random physical-layer jamming on an over-the-air 5G NR testbed using a USRP DSR jammer and Soft-T UE.</li>
-              <li>Analyzed gNB scheduler KPIs to distinguish clean and jammed traffic without IQ capture.</li>
-              <li>Built a two-stage PyTorch pipeline with an LSTM autoencoder for feature learning and a BiLSTM-attention classifier for three-class jamming classification.</li>
+              <li>Evaluated over-the-air 5G NR jamming and built a PyTorch LSTM–BiLSTM classifier for three-class detection.</li>
             </ul>
-            <p class="tools">PyTorch, LSTM, BiLSTM, 5G NR, USRP</p>
           </li>
           <li>
-            <h3>AI2F, Mississippi State University <span>· Research Intern · May 2025 — Oct 2025</span></h3>
+            <h3>AI2F (MSU) <span>· Research Intern · May 2025 — Oct 2025</span></h3>
             <ul class="detail-list">
-              <li>Trained ResNet50 and Xception transfer-learning models to classify Southern Yellow Pine and Red Oak wood chips, achieving 90% accuracy.</li>
-              <li>Built a PyTorch U-Net and ResNet34 semantic-segmentation pipeline for tree-ring detection, using elastic augmentations and Dice loss.</li>
-              <li>Increased Raspberry Pi inference from 1 FPS to 30 FPS through Hailo NPU deployment, hardware-level normalization, and INT8 quantization.</li>
+              <li>Achieved 90% wood-chip classification accuracy and raised Raspberry Pi inference from 1 to 30 FPS with Hailo INT8.</li>
             </ul>
-            <p class="tools">PyTorch, ResNet, U-Net, Hailo NPU, INT8 quantization</p>
           </li>
         </ul>
       </section>
@@ -128,29 +119,20 @@
           <li>
             <h3>EcoCAR <span>· Road-object detection</span></h3>
             <ul class="detail-list">
-              <li>Built a YAML-configurable, CLI-driven PyTorch and Ultralytics YOLO pipeline for 860 road images, 3,418 labeled objects, and 14 classes.</li>
-              <li>Fine-tuned YOLO26 variants under controlled settings and selected the final model using accuracy, recall, latency, and model-size criteria.</li>
-              <li>Reached 40.75% mAP50–95 and 76.15% F1 on 86 untouched test images; added 42 Pytest checks, dataset fingerprinting, and SHA-256 integrity checks.</li>
+              <li>Built and validated a 14-class YOLO road-object detector, reaching 40.75% mAP50–95 and 76.15% F1 on untouched test images.</li>
             </ul>
-            <p class="tools">PyTorch, Ultralytics YOLO, YAML, Pytest</p>
           </li>
           <li>
             <h3>LatentLink <span>· Optical transfer</span></h3>
             <ul class="detail-list">
-              <li>Built a VQ-VAE image-transfer pipeline that compresses 512 × 512 RGB images from 768 KB to about 4 KB while retaining 27.4 dB PSNR.</li>
-              <li>Moved images through about 27 QR frames with a PyTorch and FastAPI inference service.</li>
-              <li>Added CRC32 validation, sequence tracking, and retransmission for missing frames.</li>
+              <li>Built a VQ-VAE/QR image-transfer system that reduced 512 × 512 RGB images from 768 KB to about 4 KB.</li>
             </ul>
-            <p class="tools">VQ-VAE, PyTorch, FastAPI, QR codes, CRC32</p>
           </li>
           <li>
             <h3>JobConnect <span>· AI job matching</span></h3>
             <ul class="detail-list">
-              <li>Led AI/ML development for a two-person team building an explainable job-matching assistant for the Mississippi Department of Employment Security.</li>
-              <li>Built resume-to-job matching around embedding search, requirement scoring, preference filters, confidence, and audit logging.</li>
-              <li>Designed evaluation workflows using de-identified resumes and human-reviewed resume-to-job matches.</li>
+              <li>Led AI/ML for an explainable job-matching assistant for the Mississippi Department of Employment Security.</li>
             </ul>
-            <p class="tools">Embedding search, hybrid ranking, explainable AI</p>
           </li>
         </ul>
       </section>
