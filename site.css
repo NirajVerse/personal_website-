@@ -460,7 +460,8 @@ h3 span {
   border-bottom: 1px solid #e7e5e2;
 }
 
-.project-index a {
+.project-index > li:not(.project-entry) > a,
+.project-index > li.project-entry {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 20px;
@@ -470,8 +471,10 @@ h3 span {
 }
 
 .project-summary {
+  display: block;
   min-width: 0;
   color: var(--muted);
+  text-decoration: none;
 }
 
 .project-name {
@@ -480,15 +483,27 @@ h3 span {
   letter-spacing: -0.015em;
 }
 
-.project-repo {
+.project-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.project-repo,
+.project-case-study {
   padding-top: 2px;
   color: var(--muted);
   font-size: 0.8rem;
   white-space: nowrap;
+  text-decoration: none;
 }
 
-.project-index a:hover .project-name,
-.project-index a:hover .project-repo {
+.project-index > li:not(.project-entry) > a:hover .project-name,
+.project-index > li:not(.project-entry) > a:hover .project-repo,
+.project-summary:hover .project-name,
+.project-repo:hover,
+.project-case-study:hover {
   color: var(--accent);
 }
 
@@ -532,7 +547,8 @@ h3 span {
     block-size: 16px;
   }
 
-  .project-index a {
+  .project-index > li:not(.project-entry) > a,
+  .project-index > li.project-entry {
     grid-template-columns: 1fr;
     gap: 3px;
   }
@@ -543,8 +559,13 @@ h3 span {
     padding: 9px 0;
   }
 
-  .project-repo {
+  .project-repo,
+  .project-case-study {
     padding-top: 0;
+  }
+
+  .project-actions {
+    align-items: flex-start;
   }
 }
 
