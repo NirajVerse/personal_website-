@@ -157,6 +157,10 @@ h1 span {
   color: transparent;
 }
 
+.hero h1 span {
+  margin-inline-end: 0.05em;
+}
+
 .hero-copy {
   margin-bottom: 20px;
   font-size: 1.05rem;
