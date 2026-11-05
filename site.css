@@ -567,6 +567,14 @@ h3 span {
   stroke-width: 2;
 }
 
+.life-subtitle {
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
 .life-gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
