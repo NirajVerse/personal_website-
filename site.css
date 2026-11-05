@@ -68,10 +68,14 @@ a:focus-visible {
 
 .side-nav {
   position: sticky;
-  top: 0;
+  top: 18px;
   align-self: start;
-  padding: 40px 16px 24px;
-  border-inline-end: 1px solid #e7e5e2;
+  padding: 20px 16px;
+  margin-top: 18px;
+  border: 1px solid #e7e5e2;
+  border-inline-start: 0;
+  border-radius: 0 90px 90px 0;
+  background: var(--page);
 }
 
 .side-nav ul {
@@ -882,11 +886,14 @@ h3 span {
   .side-nav {
     position: sticky;
     z-index: 10;
+    top: 0;
     inline-size: 100%;
     block-size: auto;
     padding: 0 16px;
-    border-right: 0;
+    margin-top: 0;
+    border: 0;
     border-bottom: 1px solid #e7e5e2;
+    border-radius: 0;
     background: rgba(251, 250, 248, 0.94);
     backdrop-filter: blur(10px);
   }
