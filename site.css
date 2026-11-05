@@ -227,6 +227,14 @@ h1 span {
   padding-left: 20px;
 }
 
+.quick-list-label {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+}
+
 .quick-list {
   margin: 0;
   color: #36373c;
