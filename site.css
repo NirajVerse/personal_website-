@@ -338,6 +338,7 @@ h3 span {
 }
 
 .resume-section h2 {
+  margin-inline-start: -30px;
   margin-bottom: 22px;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
@@ -753,6 +754,10 @@ h3 span {
 
   .resume-section {
     padding: 24px 20px;
+  }
+
+  .resume-section h2 {
+    margin-inline-start: -20px;
   }
 
   .project-repo,
