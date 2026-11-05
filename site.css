@@ -257,6 +257,14 @@ h1 span {
   color: var(--muted);
 }
 
+.quick-highlight {
+  text-decoration-line: underline;
+  text-decoration-color: #aaa7a3;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
 .section {
   margin-top: 68px;
   scroll-margin-top: 24px;
