@@ -258,11 +258,11 @@ h1 span {
 }
 
 .quick-highlight {
-  text-decoration-line: underline;
-  text-decoration-color: #aaa7a3;
-  text-decoration-style: dotted;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
+  padding-bottom: 5px;
+  background-image: linear-gradient(120deg, transparent 42%, #999693 42% 58%, transparent 58%);
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  background-size: 5px 4px;
 }
 
 .section {
