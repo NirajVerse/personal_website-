@@ -551,10 +551,10 @@ h3 span {
   block-size: 19px;
   flex: 0 0 auto;
   place-items: center;
-  border: 1.5px solid #2f9e62;
+  border: 1.5px solid #356aff;
   border-radius: 3px;
-  color: #24864f;
-  background: #eff9f2;
+  color: #356aff;
+  background: #eef3ff;
 }
 
 .captcha-heading-check svg {
