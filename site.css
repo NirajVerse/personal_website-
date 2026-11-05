@@ -240,6 +240,7 @@ h1 span {
 .quick-list {
   margin: 0;
   color: #36373c;
+  font-size: 0.94rem;
 }
 
 .quick-list > li,
