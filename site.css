@@ -316,7 +316,7 @@ h3 span {
 
 .resume-list li {
   display: grid;
-  grid-template-columns: 46px minmax(0, 1fr) auto;
+  grid-template-columns: 76px minmax(0, 1fr) auto;
   gap: 13px;
   align-items: start;
   padding: 10px 0;
@@ -353,9 +353,8 @@ h3 span {
 .resume-logo {
   display: grid;
   place-items: center;
-  inline-size: 46px;
+  inline-size: 76px;
   block-size: 46px;
-  overflow: hidden;
   border: 1px solid #e3e1de;
   border-radius: 9px;
   background: #fff;
@@ -370,8 +369,13 @@ h3 span {
 }
 
 .resume-logo img.msu-symbol {
-  object-fit: cover;
-  object-position: center;
+  object-fit: contain;
+  padding: 2px;
+}
+
+.resume-logo.noaa-logo img {
+  inline-size: 42px;
+  block-size: 42px;
   padding: 0;
 }
 
@@ -682,7 +686,7 @@ h3 span {
   }
 
   .resume-list li {
-    grid-template-columns: 46px minmax(0, 1fr);
+    grid-template-columns: 76px minmax(0, 1fr);
     gap: 4px 12px;
   }
 
