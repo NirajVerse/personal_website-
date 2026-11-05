@@ -531,6 +531,132 @@ h3 span {
   transform: translateY(-5px);
 }
 
+.life-section > h2 {
+  margin-bottom: 12px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.62rem;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+  text-transform: none;
+}
+
+.life-intro {
+  max-width: 610px;
+  margin-bottom: 20px;
+  color: var(--muted);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.captcha-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  max-width: 390px;
+  min-height: 78px;
+  padding: 14px 16px;
+  margin-bottom: 22px;
+  border: 1px solid #dedde2;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0 8px 22px rgba(35, 35, 43, 0.06);
+}
+
+.captcha-check {
+  display: grid;
+  place-items: center;
+  inline-size: 30px;
+  block-size: 30px;
+  border-radius: 5px;
+  color: #fff;
+  background: #2f6df6;
+  box-shadow: 0 0 0 4px rgba(47, 109, 246, 0.12);
+}
+
+.captcha-check svg {
+  inline-size: 20px;
+  block-size: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.5;
+}
+
+.captcha-copy {
+  display: grid;
+  gap: 1px;
+  line-height: 1.35;
+}
+
+.captcha-copy strong {
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.captcha-copy small,
+.captcha-label {
+  color: var(--muted);
+  font-size: 0.7rem;
+}
+
+.captcha-label {
+  font-weight: 600;
+  letter-spacing: 0.07em;
+}
+
+.life-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.life-gallery figure {
+  min-width: 0;
+  margin: 0;
+}
+
+.life-photo-placeholder {
+  display: grid;
+  min-height: 142px;
+  aspect-ratio: 4 / 3;
+  place-content: center;
+  justify-items: center;
+  gap: 7px;
+  padding: 14px;
+  border: 1px dashed #cbc9cf;
+  border-radius: 9px;
+  color: var(--muted);
+  background: #f4f3f1;
+  font-size: 0.74rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.life-photo-plus {
+  display: grid;
+  place-items: center;
+  inline-size: 28px;
+  block-size: 28px;
+  border: 1px solid #d7d4d0;
+  border-radius: 50%;
+  color: #777c87;
+  background: #fff;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.life-gallery figcaption {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.45;
+}
+
 .resume-list {
   position: relative;
   padding: 0;
@@ -1025,6 +1151,19 @@ h3 span {
   .project-card-footer {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .captcha-card {
+    max-width: none;
+  }
+
+  .life-gallery {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .life-photo-placeholder {
+    min-height: 190px;
   }
 
 }
