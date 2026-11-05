@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">JobConnect visual</title>
+  <desc id="desc">Candidate profiles flow through explainable matching into a ranked job recommendation.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#eef1ff"/>
+      <stop offset=".55" stop-color="#f7f4ff"/>
+      <stop offset="1" stop-color="#e7f8f7"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#655cff"/>
+      <stop offset="1" stop-color="#25b9aa"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#4f5070" flood-opacity=".18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <g opacity=".35" stroke="#b8b8d0" stroke-width="2">
+    <path d="M0 72h1200M0 210h1200M0 348h1200"/><path d="M148 0v420M600 0v420M1052 0v420"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="80" y="78" width="310" height="264" rx="24" fill="#fff"/>
+    <circle cx="152" cy="148" r="35" fill="url(#accent)"/>
+    <circle cx="152" cy="137" r="12" fill="#fff" fill-opacity=".95"/>
+    <path d="M130 172c7-17 37-17 44 0" fill="#fff" fill-opacity=".95"/>
+    <rect x="210" y="120" width="128" height="14" rx="7" fill="#25273a"/>
+    <rect x="210" y="150" width="96" height="11" rx="6" fill="#9a9cae"/>
+    <rect x="112" y="222" width="90" height="34" rx="10" fill="#eeecff"/>
+    <rect x="214" y="222" width="64" height="34" rx="10" fill="#e4f8f5"/>
+    <rect x="290" y="222" width="68" height="34" rx="10" fill="#eef0f5"/>
+    <rect x="112" y="282" width="246" height="10" rx="5" fill="#e3e4ea"/>
+    <rect x="112" y="305" width="178" height="10" rx="5" fill="#e3e4ea"/>
+  </g>
+  <g fill="none" stroke="#8681d5" stroke-width="3" opacity=".7">
+    <path d="M432 154c74-80 141-88 215-18"/><path d="M432 269c80 58 151 55 218-14"/>
+    <path d="M478 209h170" stroke-dasharray="8 12"/>
+  </g>
+  <g transform="translate(570 118)">
+    <circle cx="0" cy="0" r="13" fill="#655cff"/><circle cx="78" cy="-34" r="10" fill="#25b9aa"/>
+    <circle cx="118" cy="50" r="14" fill="#655cff"/><circle cx="42" cy="96" r="10" fill="#25b9aa"/>
+    <circle cx="-38" cy="58" r="9" fill="#9d98ff"/>
+    <g stroke="#7773c8" stroke-width="3" opacity=".75">
+      <path d="M9 0l59-28M10 10l98 34M-1 13l-31 37M70-25l40 65M108 61l-58 30M-27 55l59 37"/>
+    </g>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="760" y="62" width="360" height="296" rx="26" fill="#fff"/>
+    <rect x="800" y="102" width="84" height="84" rx="20" fill="url(#accent)"/>
+    <path d="M824 137h36v27h-36zm9-11h18v11h-18z" fill="none" stroke="#fff" stroke-width="5" stroke-linejoin="round"/>
+    <rect x="912" y="108" width="154" height="15" rx="8" fill="#25273a"/>
+    <rect x="912" y="140" width="112" height="11" rx="6" fill="#9a9cae"/>
+    <rect x="800" y="222" width="194" height="12" rx="6" fill="#e2e3ea"/>
+    <rect x="800" y="250" width="258" height="12" rx="6" fill="#e2e3ea"/>
+    <rect x="800" y="278" width="148" height="12" rx="6" fill="#e2e3ea"/>
+    <rect x="1012" y="208" width="68" height="68" rx="34" fill="#e5faf6"/>
+    <path d="M1030 242l12 12 23-29" fill="none" stroke="#25a99b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="800" y="314" width="104" height="20" rx="10" fill="#eceaff"/>
+    <rect x="916" y="314" width="88" height="20" rx="10" fill="#e4f8f5"/>
+  </g>
+</svg>

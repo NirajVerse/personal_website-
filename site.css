@@ -341,6 +341,136 @@ h3 span {
   font-size: 0.9rem;
 }
 
+.shipped-section > h2 {
+  margin-bottom: 22px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.62rem;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+  text-transform: none;
+}
+
+.project-showcase {
+  display: grid;
+  gap: 22px;
+}
+
+.project-card {
+  overflow: hidden;
+  border: 1px solid #e1dfdc;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(35, 35, 43, 0.07);
+}
+
+.project-card-media {
+  height: clamp(170px, 30vw, 220px);
+  overflow: hidden;
+  background: #eef0f5;
+}
+
+.project-card-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card:first-child .project-card-media img {
+  object-position: 50% 45%;
+}
+
+.project-card-body {
+  position: relative;
+  padding: 22px 24px 20px;
+}
+
+.project-card-kicker {
+  margin-bottom: 7px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.project-card h3 {
+  margin-bottom: 7px;
+  font-size: 1.05rem;
+}
+
+.project-card-description {
+  max-width: 565px;
+  margin-bottom: 16px;
+  color: var(--muted);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.project-card-footer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.project-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.project-card-tags li {
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: var(--muted);
+  background: #efeff3;
+  font-size: 0.7rem;
+  line-height: 1.2;
+}
+
+.project-card-link,
+.project-card-status {
+  flex: 0 0 auto;
+  color: var(--accent);
+  font-size: 0.78rem;
+  white-space: nowrap;
+}
+
+.project-card-link {
+  text-decoration: none;
+}
+
+.project-card-link:hover {
+  color: #3f37d9;
+}
+
+.project-card-status {
+  color: var(--muted);
+}
+
+.project-card-number {
+  position: absolute;
+  right: 12px;
+  bottom: -22px;
+  color: #efeeeb;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 5.4rem;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
 .resume-list {
   position: relative;
   padding: 0;
@@ -798,6 +928,7 @@ h3 span {
   .project-actions {
     align-items: flex-start;
   }
+
 }
 
 @media (max-width: 560px) {
@@ -816,5 +947,19 @@ h3 span {
 
   .section {
     margin-top: 54px;
+  }
+
+  .project-card-body {
+    padding: 19px 18px 18px;
+  }
+
+  .project-card-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .project-card-number {
+    right: 8px;
+    font-size: 4.7rem;
   }
 }

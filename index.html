@@ -153,37 +153,69 @@
         </ul>
       </section>
 
-      <section class="section" aria-labelledby="projects-heading">
-        <h2 id="projects-heading">Projects</h2>
-        <ul class="work-list">
-          <li>
-            <h3>EcoCAR <span>· Road-object detection</span></h3>
-            <ul class="detail-list">
-              <li>Built a configurable YOLO pipeline for 860 images, 3,418 objects, and 14 classes.</li>
-              <li>Benchmarked YOLO variants by accuracy, recall, latency, and model size.</li>
-              <li>Reached 40.75% mAP50–95 and 76.15% F1 on 86 untouched tests.</li>
-            </ul>
-            <p class="tools">PyTorch, Ultralytics YOLO, YAML, Pytest</p>
-          </li>
-          <li>
-            <h3>LatentLink <span>· Optical transfer</span></h3>
-            <ul class="detail-list">
-              <li>Compressed 512 × 512 RGB images from 768 KB to about 4 KB with VQ-VAE.</li>
-              <li>Sent each image through about 27 QR-code frames.</li>
-              <li>Added CRC32 validation, missing-frame retransmission, and FastAPI inference.</li>
-            </ul>
-            <p class="tools">VQ-VAE, PyTorch, FastAPI, QR codes, CRC32</p>
-          </li>
-          <li>
-            <h3>JobConnect <span>· AI job matching</span></h3>
-            <ul class="detail-list">
-              <li>Led AI/ML for a two-person explainable job-matching assistant for MDES.</li>
-              <li>Combined embedding search, requirement scoring, and preference filters.</li>
-              <li>Added confidence estimates, audit logs, and human-reviewed evaluation.</li>
-            </ul>
-            <p class="tools">Embedding search, hybrid ranking, explainable AI</p>
-          </li>
-        </ul>
+      <section class="section shipped-section" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Shipped</h2>
+        <div class="project-showcase">
+          <article class="project-card">
+            <div class="project-card-media">
+              <img src="assets/ecocar-detection-card.jpg" alt="YOLO road-object detections on a driving scene" decoding="async" />
+            </div>
+            <div class="project-card-body">
+              <p class="project-card-kicker">Computer Vision · Autonomous Systems</p>
+              <h3>EcoCAR Road-Object Detection</h3>
+              <p class="project-card-description">Compared YOLO models and froze a detector using held-out validation for real-time road scenes.</p>
+              <div class="project-card-footer">
+                <ul class="project-card-tags" aria-label="Technologies">
+                  <li>PyTorch</li>
+                  <li>YOLO</li>
+                  <li>Computer Vision</li>
+                </ul>
+                <a class="project-card-link" href="ecocar-road-object-detection.html" aria-label="View EcoCAR Road-Object Detection project">View project ↗</a>
+              </div>
+              <span class="project-card-number" aria-hidden="true">01</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-media">
+              <img src="assets/latentlink-card.svg" alt="Illustration of image transfer between phones through QR-code frames" decoding="async" />
+            </div>
+            <div class="project-card-body">
+              <p class="project-card-kicker">Machine Learning · Optical Transfer</p>
+              <h3>LatentLink</h3>
+              <p class="project-card-description">Compressed images into VQ-VAE latents and moved them between phones through validated QR-code frames.</p>
+              <div class="project-card-footer">
+                <ul class="project-card-tags" aria-label="Technologies">
+                  <li>VQ-VAE</li>
+                  <li>FastAPI</li>
+                  <li>QR Codes</li>
+                </ul>
+                <a class="project-card-link" href="https://github.com/NirajVerse/latent_link" target="_blank" rel="noopener noreferrer" aria-label="View LatentLink project on GitHub">View project ↗</a>
+              </div>
+              <span class="project-card-number" aria-hidden="true">02</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-media">
+              <img src="assets/jobconnect-card.svg" alt="Illustration of explainable candidate-to-job matching" decoding="async" />
+            </div>
+            <div class="project-card-body">
+              <p class="project-card-kicker">AI Systems · Product</p>
+              <h3>JobConnect</h3>
+              <p class="project-card-description">Built an explainable job-matching assistant with embedding search, preference filters, confidence estimates, and audit logs.</p>
+              <div class="project-card-footer">
+                <ul class="project-card-tags" aria-label="Technologies">
+                  <li>Embeddings</li>
+                  <li>Ranking</li>
+                  <li>Explainable AI</li>
+                </ul>
+                <span class="project-card-status">Private build</span>
+              </div>
+              <span class="project-card-number" aria-hidden="true">03</span>
+            </div>
+          </article>
+        </div>
       </section>
 
       <footer class="site-footer">© 2026 Niraj Gupta</footer>

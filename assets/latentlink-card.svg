@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">LatentLink visual</title>
+  <desc id="desc">Two phones transfer a compressed image through QR-code frames.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17142f"/>
+      <stop offset="0.55" stop-color="#2f2b65"/>
+      <stop offset="1" stop-color="#174b66"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#8c7bff"/>
+      <stop offset="1" stop-color="#5ee4d5"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#070615" flood-opacity=".42"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="420" fill="url(#bg)"/>
+  <g opacity=".13" fill="#fff">
+    <circle cx="75" cy="65" r="3"/><circle cx="165" cy="115" r="3"/><circle cx="263" cy="56" r="3"/>
+    <circle cx="949" cy="72" r="3"/><circle cx="1050" cy="130" r="3"/><circle cx="1140" cy="62" r="3"/>
+    <circle cx="93" cy="339" r="3"/><circle cx="1102" cy="340" r="3"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="120" y="54" width="210" height="312" rx="30" fill="#0d1020" stroke="#b8b5ff" stroke-width="4"/>
+    <rect x="139" y="88" width="172" height="224" rx="16" fill="url(#screen)"/>
+    <path d="M139 255c43-44 79-38 105-72 18-23 38-27 67-11v140H139Z" fill="#101c3b" opacity=".72"/>
+    <circle cx="184" cy="148" r="26" fill="#ffe59c" opacity=".9"/>
+    <rect x="198" y="69" width="55" height="7" rx="4" fill="#777b97"/>
+    <circle cx="225" cy="338" r="12" fill="none" stroke="#747993" stroke-width="3"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="870" y="54" width="210" height="312" rx="30" fill="#0d1020" stroke="#7ce7dc" stroke-width="4"/>
+    <rect x="889" y="88" width="172" height="224" rx="16" fill="#fafcff"/>
+    <rect x="936" y="69" width="55" height="7" rx="4" fill="#777b97"/>
+    <circle cx="975" cy="338" r="12" fill="none" stroke="#747993" stroke-width="3"/>
+    <g fill="#14152b">
+      <rect x="912" y="110" width="34" height="34"/><rect x="954" y="110" width="12" height="12"/><rect x="975" y="110" width="18" height="18"/><rect x="1002" y="110" width="35" height="35"/>
+      <rect x="912" y="153" width="12" height="12"/><rect x="933" y="153" width="22" height="22"/><rect x="965" y="138" width="12" height="27"/><rect x="985" y="153" width="12" height="12"/><rect x="1006" y="154" width="31" height="12"/>
+      <rect x="912" y="184" width="28" height="28"/><rect x="949" y="184" width="12" height="12"/><rect x="970" y="176" width="24" height="24"/><rect x="1004" y="176" width="12" height="12"/><rect x="1025" y="176" width="12" height="35"/>
+      <rect x="912" y="221" width="12" height="12"/><rect x="933" y="221" width="31" height="12"/><rect x="974" y="210" width="12" height="33"/><rect x="996" y="221" width="41" height="12"/>
+      <rect x="912" y="252" width="35" height="35"/><rect x="957" y="252" width="12" height="12"/><rect x="978" y="252" width="22" height="22"/><rect x="1010" y="252" width="27" height="35"/>
+    </g>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <path d="M382 174h365" stroke="#a9a2ff" stroke-width="7" stroke-dasharray="10 18"/>
+    <path d="M730 157l30 17-30 17" stroke="#75e3d5" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M817 246H452" stroke="#75e3d5" stroke-width="7" stroke-dasharray="10 18"/>
+    <path d="M469 229l-30 17 30 17" stroke="#a9a2ff" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(515 112)" filter="url(#shadow)">
+    <rect width="170" height="170" rx="28" fill="#fff" fill-opacity=".96"/>
+    <g fill="#29254f">
+      <rect x="24" y="24" width="42" height="42" rx="3"/><rect x="104" y="24" width="42" height="42" rx="3"/>
+      <rect x="24" y="104" width="42" height="42" rx="3"/><rect x="78" y="24" width="12" height="12"/>
+      <rect x="78" y="48" width="16" height="16"/><rect x="72" y="78" width="18" height="18"/><rect x="102" y="80" width="12" height="12"/>
+      <rect x="126" y="78" width="20" height="20"/><rect x="78" y="108" width="12" height="12"/><rect x="102" y="108" width="18" height="18"/>
+      <rect x="128" y="118" width="18" height="28"/><rect x="78" y="134" width="28" height="12"/>
+    </g>
+    <path d="M39 39h12v12H39zM119 39h12v12h-12zM39 119h12v12H39z" fill="#7ce7dc"/>
+  </g>
+</svg>
