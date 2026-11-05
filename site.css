@@ -70,8 +70,7 @@ a:focus-visible {
   position: sticky;
   top: 0;
   align-self: start;
-  block-size: 100svh;
-  padding: 40px 16px;
+  padding: 40px 16px 24px;
   border-inline-end: 1px solid #e7e5e2;
 }
 
