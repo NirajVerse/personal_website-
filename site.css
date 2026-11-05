@@ -291,9 +291,20 @@ h3 span {
 }
 
 .resume-list {
+  position: relative;
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.resume-list::before {
+  position: absolute;
+  z-index: 0;
+  inset-block: 33px;
+  inset-inline-start: 38px;
+  inline-size: 1px;
+  content: "";
+  background: #d9d6d1;
 }
 
 .resume-section {
@@ -315,6 +326,8 @@ h3 span {
 }
 
 .resume-list li {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 76px minmax(0, 1fr) auto;
   gap: 13px;
