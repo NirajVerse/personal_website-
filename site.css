@@ -207,6 +207,7 @@ h1 span {
 }
 
 .resume-text-link {
+  position: relative;
   display: inline-flex;
   align-items: center;
   min-block-size: 22px;
@@ -216,6 +217,17 @@ h1 span {
   line-height: 1;
   text-decoration: none;
   transition: color 150ms ease;
+}
+
+.resume-text-link::after {
+  position: absolute;
+  inset-inline: 0;
+  bottom: -1px;
+  height: 4px;
+  content: "";
+  background-image: linear-gradient(120deg, transparent 42%, #999693 42% 58%, transparent 58%);
+  background-repeat: repeat-x;
+  background-size: 5px 4px;
 }
 
 .resume-text-link:hover {
