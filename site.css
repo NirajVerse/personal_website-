@@ -532,6 +532,9 @@ h3 span {
 }
 
 .life-section > h2 {
+  display: flex;
+  gap: 9px;
+  align-items: center;
   margin-bottom: 12px;
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
@@ -540,6 +543,28 @@ h3 span {
   letter-spacing: -0.035em;
   line-height: 1.2;
   text-transform: none;
+}
+
+.captcha-heading-check {
+  display: inline-grid;
+  inline-size: 19px;
+  block-size: 19px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1.5px solid #2f9e62;
+  border-radius: 3px;
+  color: #24864f;
+  background: #eff9f2;
+}
+
+.captcha-heading-check svg {
+  inline-size: 14px;
+  block-size: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
 }
 
 .life-gallery {
