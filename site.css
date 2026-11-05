@@ -336,7 +336,7 @@ h3 span {
 }
 
 .resume-list li + li {
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 .resume-list h3 {
@@ -394,6 +394,13 @@ h3 span {
   inline-size: 42px;
   block-size: 42px;
   padding: 0;
+}
+
+.resume-logo.ai2f-logo img {
+  inline-size: 36px;
+  block-size: 36px;
+  padding: 0;
+  border-radius: 50%;
 }
 
 .compact-section p {
