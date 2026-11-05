@@ -542,23 +542,12 @@ h3 span {
   text-transform: none;
 }
 
-.life-intro {
-  max-width: 610px;
-  margin-bottom: 20px;
-  color: var(--muted);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.94rem;
-  line-height: 1.6;
-}
-
 .captcha-card {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
-  gap: 12px;
-  align-items: center;
-  max-width: 390px;
-  min-height: 78px;
-  padding: 14px 16px;
+  display: inline-grid;
+  min-width: 62px;
+  min-height: 62px;
+  padding: 14px;
+  place-items: center;
   margin-bottom: 22px;
   border: 1px solid #dedde2;
   border-radius: 9px;
@@ -585,28 +574,6 @@ h3 span {
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 2.5;
-}
-
-.captcha-copy {
-  display: grid;
-  gap: 1px;
-  line-height: 1.35;
-}
-
-.captcha-copy strong {
-  font-size: 0.92rem;
-  font-weight: 500;
-}
-
-.captcha-copy small,
-.captcha-label {
-  color: var(--muted);
-  font-size: 0.7rem;
-}
-
-.captcha-label {
-  font-weight: 600;
-  letter-spacing: 0.07em;
 }
 
 .life-gallery {
@@ -1151,10 +1118,6 @@ h3 span {
   .project-card-footer {
     align-items: flex-start;
     flex-direction: column;
-  }
-
-  .captcha-card {
-    max-width: none;
   }
 
   .life-gallery {
