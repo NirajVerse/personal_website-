@@ -361,56 +361,18 @@ h3 span {
   background: #fff;
 }
 
-.resume-logo svg {
-  inline-size: 38px;
-  block-size: 38px;
+.resume-logo img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: contain;
+  padding: 3px;
 }
 
-.noaa-logo {
-  color: #fff;
-  background: #1769aa;
-  border-color: #1769aa;
-}
-
-.noaa-logo circle {
-  fill: currentColor;
-}
-
-.noaa-logo path {
-  fill: none;
-  stroke: #cfeaff;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3;
-}
-
-.msu-logo {
-  color: #fff;
-  background: #660000;
-  border-color: #660000;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: -0.13em;
-}
-
-.msu-logo span {
-  font-size: 1.1em;
-}
-
-.ai2f-logo {
-  color: #4d57d9;
-  background: #f4f5ff;
-  border-color: #dfe2ff;
-}
-
-.ai2f-logo path,
-.ai2f-logo circle {
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3;
+.resume-logo img.msu-symbol {
+  object-fit: cover;
+  object-position: center;
+  padding: 0;
 }
 
 .compact-section p {
