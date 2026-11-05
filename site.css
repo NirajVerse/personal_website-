@@ -335,6 +335,10 @@ h3 span {
   padding: 10px 0;
 }
 
+.resume-list li + li {
+  margin-top: 8px;
+}
+
 .resume-list h3 {
   margin: 1px 0 2px;
   font-size: 0.96rem;
