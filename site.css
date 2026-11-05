@@ -71,34 +71,24 @@ a:focus-visible {
   top: 0;
   align-self: start;
   padding: 40px 16px 24px;
-  border-inline-end: 0;
-}
-
-@media (min-width: 721px) {
-  .side-nav::after {
-    position: absolute;
-    inset-block-start: 12px;
-    inset-inline-start: -78px;
-    inline-size: 316px;
-    block-size: 182px;
-    border: 1px solid #e7e5e2;
-    border-radius: 50%;
-    content: "";
-    pointer-events: none;
-  }
-}
-
-@media (min-width: 721px) and (max-width: 999px) {
-  .side-nav::after {
-    inset-inline-start: -62px;
-    inline-size: 252px;
-  }
 }
 
 .side-nav ul {
+  position: relative;
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.side-nav ul::before {
+  position: absolute;
+  z-index: 0;
+  inset-block: 10px;
+  inset-inline-start: 12px;
+  inline-size: 1px;
+  content: "";
+  background: #dcd8e5;
+  pointer-events: none;
 }
 
 .side-nav li + li {
@@ -106,14 +96,35 @@ a:focus-visible {
 }
 
 .side-nav a {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
   min-block-size: 44px;
+  padding-inline-start: 34px;
   color: var(--ink);
   font-size: 0.9rem;
   text-decoration: none;
+}
+
+.side-nav a::before {
+  position: absolute;
+  z-index: 1;
+  inset-block-start: 50%;
+  inset-inline-start: 12px;
+  inline-size: 8px;
+  block-size: 8px;
+  border: 1.5px solid #d6d1e2;
+  border-radius: 50%;
+  content: "";
+  background: var(--page);
+  transform: translate(-50%, -50%);
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.side-nav a:hover::before {
+  border-color: var(--accent);
 }
 
 .side-nav a:hover {
@@ -123,6 +134,14 @@ a:focus-visible {
 .side-nav a[aria-current="page"] {
   color: var(--accent);
   font-weight: 600;
+}
+
+.side-nav a[aria-current="page"]::before {
+  inline-size: 10px;
+  block-size: 10px;
+  border-color: var(--accent);
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(99, 91, 255, 0.15), 0 0 12px rgba(99, 91, 255, 0.68);
 }
 
 .side-nav svg {
@@ -915,7 +934,8 @@ h3 span {
     backdrop-filter: blur(10px);
   }
 
-  .side-nav::after {
+  .side-nav ul::before,
+  .side-nav a::before {
     content: none;
   }
 
@@ -934,6 +954,7 @@ h3 span {
     justify-content: center;
     gap: 7px;
     min-block-size: 52px;
+    padding-inline-start: 0;
     font-size: 0.84rem;
   }
 
