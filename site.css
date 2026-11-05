@@ -166,6 +166,7 @@ h1 span {
   margin-bottom: 20px;
   color: var(--ink);
   font-size: 0.94rem;
+  font-style: italic;
   line-height: 1.65;
 }
 
