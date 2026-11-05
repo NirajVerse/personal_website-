@@ -542,40 +542,6 @@ h3 span {
   text-transform: none;
 }
 
-.captcha-card {
-  display: inline-grid;
-  min-width: 62px;
-  min-height: 62px;
-  padding: 14px;
-  place-items: center;
-  margin-bottom: 22px;
-  border: 1px solid #dedde2;
-  border-radius: 9px;
-  background: #fff;
-  box-shadow: 0 8px 22px rgba(35, 35, 43, 0.06);
-}
-
-.captcha-check {
-  display: grid;
-  place-items: center;
-  inline-size: 30px;
-  block-size: 30px;
-  border-radius: 5px;
-  color: #fff;
-  background: #2f6df6;
-  box-shadow: 0 0 0 4px rgba(47, 109, 246, 0.12);
-}
-
-.captcha-check svg {
-  inline-size: 20px;
-  block-size: 20px;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2.5;
-}
-
 .life-gallery {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
