@@ -531,18 +531,6 @@ h3 span {
   transform: translateY(-5px);
 }
 
-.project-card-number {
-  position: absolute;
-  right: 12px;
-  bottom: -22px;
-  color: #efeeeb;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 5.4rem;
-  line-height: 1;
-  pointer-events: none;
-  user-select: none;
-}
-
 .resume-list {
   position: relative;
   padding: 0;
@@ -1039,10 +1027,6 @@ h3 span {
     flex-direction: column;
   }
 
-  .project-card-number {
-    right: 8px;
-    font-size: 4.7rem;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
