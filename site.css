@@ -404,6 +404,10 @@ h3 span {
   border-radius: 50%;
 }
 
+.resume-logo.hpc-logo {
+  margin-bottom: 8px;
+}
+
 .compact-section p {
   margin-bottom: 12px;
 }
