@@ -321,7 +321,8 @@ h3 span {
 .resume-list {
   position: relative;
   padding: 0;
-  margin: 0;
+  margin-block: 0;
+  margin-inline: -30px 30px;
   list-style: none;
 }
 
@@ -743,6 +744,10 @@ h3 span {
   .resume-list li {
     grid-template-columns: 76px minmax(0, 1fr);
     gap: 4px 12px;
+  }
+
+  .resume-list {
+    margin-inline: -20px 20px;
   }
 
   .resume-logo {
