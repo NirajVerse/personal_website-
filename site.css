@@ -165,6 +165,7 @@ h1 span {
 .hero-copy {
   margin-bottom: 20px;
   color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 0.94rem;
   font-style: italic;
   line-height: 1.65;
