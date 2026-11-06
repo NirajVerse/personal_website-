@@ -446,48 +446,17 @@ h3 span {
 
 .project-card-media-asv {
   display: grid;
-  grid-template-columns: minmax(150px, 0.82fr) minmax(250px, 1.18fr);
-  align-items: stretch;
-  background: linear-gradient(122deg, #f5f9f8 0%, #edf6f5 55%, #e5f0f0 100%);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  height: clamp(220px, 40vw, 290px);
+  padding: 8px;
+  background: #edf3f2;
 }
 
 .project-card-media-asv > img {
+  min-width: 0;
   object-fit: contain;
-  padding: 9px;
   background: #fff;
-}
-
-.project-card-media-stats {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 22px 26px;
-  color: #315d60;
-}
-
-.project-card-media-eyebrow {
-  margin-bottom: 7px;
-  color: #52777a;
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-}
-
-.project-card-media-metric {
-  margin-bottom: 10px;
-  color: #214d50;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.65rem, 4vw, 2.35rem);
-  font-weight: 400;
-  letter-spacing: -0.045em;
-  line-height: 1;
-}
-
-.project-card-media-detail {
-  color: #52777a;
-  font-size: 0.75rem;
-  line-height: 1.55;
 }
 
 .project-card-media-robot {
@@ -500,29 +469,10 @@ h3 span {
 
 @media (max-width: 520px) {
   .project-card-media-asv {
-    grid-template-columns: 44% 56%;
-  }
-
-  .project-card-media-asv > img {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    height: clamp(330px, 112vw, 390px);
     padding: 6px;
-  }
-
-  .project-card-media-stats {
-    padding: 13px 11px;
-  }
-
-  .project-card-media-eyebrow {
-    margin-bottom: 5px;
-    font-size: 0.54rem;
-  }
-
-  .project-card-media-metric {
-    margin-bottom: 7px;
-    font-size: 1.35rem;
-  }
-
-  .project-card-media-detail {
-    font-size: 0.64rem;
   }
 }
 
