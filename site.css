@@ -777,6 +777,7 @@ h3 span {
 }
 
 .resume-logo.hpc-logo {
+  overflow: hidden;
   margin-bottom: 8px;
 }
 
