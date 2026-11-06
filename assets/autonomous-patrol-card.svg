@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Autonomous patrol route replanning</title>
+  <desc id="desc">A patrol route connects three inspection stations. A blocked road triggers a dashed alternate path.</desc>
+  <defs>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#28314e" flood-opacity=".14" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="420" fill="#eef1f8" />
+  <g stroke="#dbe1ee" stroke-width="1" opacity=".72">
+    <path d="M0 52H1200M0 104H1200M0 156H1200M0 208H1200M0 260H1200M0 312H1200M0 364H1200" />
+    <path d="M52 0V420M104 0V420M156 0V420M208 0V420M260 0V420M312 0V420M364 0V420M416 0V420M468 0V420M520 0V420M572 0V420M624 0V420M676 0V420M728 0V420M780 0V420M832 0V420M884 0V420M936 0V420M988 0V420M1040 0V420M1092 0V420M1144 0V420" />
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="58" y="62" fill="#687188" font-size="17" font-weight="700" letter-spacing="2.6">AUTONOMOUS PATROL MAP</text>
+    <text x="58" y="94" fill="#24293a" font-size="24" font-weight="600">LiDAR blockage detection + live route replanning</text>
+  </g>
+
+  <g fill="none" stroke="#bac3d6" stroke-linecap="round" stroke-linejoin="round" stroke-width="16">
+    <path d="M126 294H347V156H594V294H842V156H1065" />
+    <path d="M347 294H594" />
+    <path d="M842 294H1065" />
+  </g>
+
+  <path d="M126 294H347V156H594V294" fill="none" stroke="#6558ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+  <path d="M594 294C640 225 696 188 766 183C830 178 872 204 909 242C949 283 996 294 1065 294" fill="none" stroke="#18a4a7" stroke-dasharray="15 13" stroke-linecap="round" stroke-width="9" />
+
+  <g transform="translate(690 269) rotate(-24)">
+    <rect x="-39" y="-17" width="78" height="34" rx="8" fill="#fff" stroke="#e7525d" stroke-width="4" filter="url(#shadow)" />
+    <path d="M-23 -8 23 8M23 -8-23 8" stroke="#e7525d" stroke-linecap="round" stroke-width="5" />
+  </g>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(126 294)">
+      <circle r="24" fill="#fff" stroke="#6558ff" stroke-width="7" />
+      <circle r="8" fill="#6558ff" />
+    </g>
+    <g transform="translate(347 156)">
+      <circle r="24" fill="#fff" stroke="#6558ff" stroke-width="7" />
+      <circle r="8" fill="#6558ff" />
+    </g>
+    <g transform="translate(594 294)">
+      <circle r="24" fill="#fff" stroke="#6558ff" stroke-width="7" />
+      <circle r="8" fill="#6558ff" />
+    </g>
+    <g transform="translate(1065 294)">
+      <circle r="24" fill="#fff" stroke="#18a4a7" stroke-width="7" />
+      <circle r="8" fill="#18a4a7" />
+    </g>
+  </g>
+
+  <g fill="#4d566d" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="1.1">
+    <text x="90" y="347">START</text>
+    <text x="306" y="117">STATION 1</text>
+    <text x="553" y="347">STATION 2</text>
+    <text x="1022" y="347">STATION 3</text>
+  </g>
+
+  <g transform="translate(844 168)" filter="url(#shadow)">
+    <rect x="-43" y="-30" width="86" height="60" rx="16" fill="#24293a" />
+    <rect x="-23" y="-13" width="46" height="31" rx="8" fill="#fff" />
+    <circle cx="-25" cy="23" r="9" fill="#18a4a7" stroke="#fff" stroke-width="4" />
+    <circle cx="25" cy="23" r="9" fill="#18a4a7" stroke="#fff" stroke-width="4" />
+    <path d="M0-30V-44M-15-44H15" stroke="#24293a" stroke-linecap="round" stroke-width="6" />
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700">
+    <g transform="translate(737 339)">
+      <rect width="144" height="34" rx="17" fill="#fff" opacity=".96" />
+      <circle cx="20" cy="17" r="5" fill="#18a4a7" />
+      <text x="34" y="22" fill="#397276">REPLANNED</text>
+    </g>
+    <g transform="translate(608 199)">
+      <rect width="126" height="34" rx="17" fill="#fff" opacity=".96" />
+      <circle cx="20" cy="17" r="5" fill="#e7525d" />
+      <text x="34" y="22" fill="#a33f48">BLOCKED</text>
+    </g>
+  </g>
+</svg>
