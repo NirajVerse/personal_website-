@@ -701,7 +701,7 @@ h3 span {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 76px minmax(0, 1fr) auto;
+  grid-template-columns: 76px minmax(0, 1fr) 130px;
   gap: 13px;
   align-items: start;
   padding: 10px 0;
