@@ -781,6 +781,14 @@ h3 span {
   margin-bottom: 8px;
 }
 
+.resume-logo.hpc-logo img {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  object-fit: cover;
+  object-position: 50% 44.5%;
+}
+
 .compact-section p {
   margin-bottom: 12px;
 }
