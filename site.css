@@ -777,16 +777,20 @@ h3 span {
 }
 
 .resume-logo.hpc-logo {
+  position: relative;
   overflow: hidden;
   margin-bottom: 8px;
 }
 
 .resume-logo.hpc-logo img {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  inset-block-start: -14px;
+  inset-inline-start: 50%;
+  inline-size: 100%;
+  block-size: auto;
+  max-inline-size: none;
   padding: 0;
-  object-fit: cover;
-  object-position: 50% 47%;
+  transform: translateX(-50%);
 }
 
 .compact-section p {
