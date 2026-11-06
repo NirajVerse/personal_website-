@@ -757,9 +757,42 @@ h3 span {
 }
 
 .site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 80px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e0dc;
   color: var(--muted);
   font-size: 0.83rem;
+}
+
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin: 0;
+  font-style: normal;
+}
+
+.footer-contact a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: var(--accent);
+}
+
+.footer-separator {
+  color: #b8b5b0;
+}
+
+.footer-copyright {
+  white-space: nowrap;
 }
 
 .page-label {
@@ -1134,6 +1167,19 @@ h3 span {
 
   .life-photo-placeholder {
     min-height: 190px;
+  }
+
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer-separator {
+    display: none;
+  }
+
+  .footer-contact {
+    gap: 6px 14px;
   }
 
 }
