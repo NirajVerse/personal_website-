@@ -467,6 +467,22 @@ h3 span {
   object-fit: contain;
 }
 
+.project-card-media-jobconnect {
+  position: relative;
+  height: auto;
+  aspect-ratio: 1838 / 900;
+  background: #eaf3f8;
+}
+
+.project-card-media-jobconnect img {
+  position: absolute;
+  inset-block-start: -17%;
+  inset-inline-start: -3.59%;
+  width: 104.46%;
+  height: auto;
+  max-width: none;
+}
+
 @media (max-width: 520px) {
   .project-card-media-asv {
     grid-template-columns: 1fr;
